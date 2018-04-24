@@ -1,0 +1,89 @@
+@charset "utf-8";
+.page_join{
+	background: $whiteColor;
+	.bui-bar{
+		background: $mainColor;
+		.icon_search{
+			@include bg(0.23rem,0.23rem,"icon-search");
+		}
+		.bui-bar-main{
+			background: $whiteColor;
+			@include borderRadius(0.25rem);
+			line-height: 0.45rem;
+			text-align: left;
+			padding: 0 0.2rem;
+			input{
+				line-height: 0.45rem;
+				border: none;
+				color: $fontBlack;
+				padding-left: 0.05rem;
+				font-size: .22rem;
+			}
+		}
+	}
+	main{
+		background: $whiteColor;
+		.adjust{
+			color:#F9493F; 
+			padding: 0.1rem 0.18rem;
+			margin-bottom: 0;
+			font-size: 0.16rem;
+			background: #FCFBFC;
+		}
+		ul{
+			padding: 0 0.18rem;
+			li{
+				padding: 0.18rem 0;
+				border-bottom: 1px solid $borderGray;
+				.img{
+					width: 1.15rem;
+					height: 1.15rem;
+					border-radius: 0.05rem;
+					overflow: hidden;
+					border:1px solid $borderGray;
+					img{
+						object-fit:cover;
+						height: 100%;
+					}
+				}
+				.span1{
+					padding-left:0.2rem;
+					h3{
+						color: #000000;
+						padding: 0.1rem 0;
+						@extend .textO;
+					}
+					p{
+						color: $fontGray;
+						font-size: 0.16rem;
+						@extend .textO;
+					}
+					span{
+						color: $redColor;
+						font-size: 0.26rem;
+						@extend .textO;
+						strong{
+							font-size: 0.14rem;
+							font-weight: normal;
+						}
+						i{
+							display: inline-block;
+							border:1px solid $borderGray;
+							border-radius: 3px; 
+						}
+						&.iconR{
+							float: right;
+							.icon_deleteBlue{
+								@include bg(0.29rem,0.29rem,"icon-remove-1");
+								margin-right: 0.14rem;
+							}
+							.icon_carBlue{
+								@include bg(0.29rem,0.29rem,"icon-join-cart");
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

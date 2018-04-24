@@ -1,0 +1,30 @@
+@charset "utf-8";
+.query-page{
+	&-content{
+		.query-title{
+			font-size:$font22;
+			color:#333;
+			.query-time{
+        font-size:$font18;
+        color:#999;
+			}
+		}
+		.query-item{
+			padding-top:.2rem;
+			height:1.5rem;
+			border-top:1px solid #eee;
+			&:nth-child(2n+1){
+				border-right:1px solid #eee;
+			}
+		}
+		.query-number{
+			color:$mainColor;
+			font-size:$font30;
+		}
+		.query-info{
+			margin-top:.15rem;
+			color:#999;
+			font-size:$font20;
+		}
+	}
+}

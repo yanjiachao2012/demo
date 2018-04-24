@@ -1,0 +1,387 @@
+@charset "utf-8";
+/*订单列表,详情*/
+.myOrder-page{
+	&-list{
+		.tab-name{
+			display:inline-block;
+			padding:.2rem 0 .18rem;
+			color:$font666;
+			font-size:$font24;
+			border-bottom:2px solid transparent;
+		}
+		.active{
+			.tab-name{
+				color:$mainColor;
+        border-bottom-color:$mainColor;
+			}
+		}
+	}
+	.margin-top{
+		margin-top:.2rem;
+	}
+	.order-mark{
+		padding:.18rem .1rem;
+		border-bottom:1px solid #efefef;
+		.order-mark-tip{
+			padding:.03rem .1rem;
+			margin-right:.1rem;
+			line-height:1;
+			letter-spacing: 3px;
+			color:$redColor;
+			font-size:$font18;
+			border-radius: .05rem;
+			border:1px solid $redColor;
+		}
+		.order-mark-content{
+			color:$fontColor;
+			font-size:$font22;
+		}
+		.mark-info{
+			color:#ea4e45;
+			font-size:$font20;
+		}
+	}
+	.giveaway-tip{
+		font-size:$font20;
+		border-top:1px solid #efefef;
+		.giveaway-number{
+			color:#999;
+		}
+	}
+	.order-item{
+			margin-top:.2rem;
+			background-color:#fff;
+			&-code{
+				padding:.15rem 0;
+				margin:0 .2rem;
+				font-size:$font18;
+				color:$fontColor;
+				border-bottom:1px solid #efefef;
+				.code{
+					color:$fontGray;
+				}
+				.bui-right{
+					font-weight: normal;
+				}
+				.not-submit{
+					color:#F23030;
+				}
+				.has-submit{
+	         color:$mainColor;
+				}
+			}
+			.product-info{
+				border:none;
+				background-color:#fcfcfc;
+			}
+			.product-img{
+				margin-right:.2rem;
+				width:.7rem;
+				height:.7rem;
+				line-height: .6rem;
+				border:1px solid #efefef;
+				background-color:#fff;
+				overflow:hidden;
+				@include borderRadius(.1rem);
+				img{
+					width:90%;
+					height:90%;
+					object-fit:cover;
+				}
+			}
+			.product-name{
+				margin-bottom:.1rem;
+				color:#000;
+				font-size:$font24;
+			}
+			.product-type{
+				margin-bottom:0;
+				line-height:1.4;
+				color:$fontGray;
+				font-size:$font18;
+			}
+			.wrap-order-info{
+				padding-bottom:.2rem;
+				margin:0 .2rem;
+				border-top:1px solid #efefef;
+			}
+			.order-info{
+				padding-top:.15rem;
+				padding-bottom:.2rem;
+				color:$font666;
+				font-size:$font20;
+				.price{
+					padding-left:.2rem;
+				}
+			}
+		.order-item-row{
+			border-bottom:1px solid #efefef;
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+	.bui-nav{
+		.bui-btn{
+			padding:0;
+			border-bottom:none;
+		}
+	}
+	&-operate{
+		.bui-btn{
+			padding:.1rem .15rem;
+			margin-left:.12rem;
+			display:inline-block;
+			width:auto;
+			min-width: 1rem;
+			color:$fontColor;
+		  font-size:$font22;
+			min-height: inherit;
+			@include borderRadius(.05rem);
+		}
+		.sure-btn{
+			color:#fff;
+			border:none;
+			background-color:#15CABC;
+		}
+	}
+	&-details{
+		.online-tip{
+			color:$mainColor;
+			.online-icon{
+				margin-right:.1rem;
+				@include backgroundIcon(icon-online,.2rem,.2rem);
+				background-size:contain;
+				vertical-align: -1px;
+			}
+		}
+		.details-img{
+			margin-right:.2rem;
+			width:1.2rem;
+			height:1.2rem;
+			line-height:1rem;
+			border:1px solid #efefef;
+			background-color:#fff;
+			@include borderRadius(.08rem);
+			img{
+				width:90%;
+				height:90%;
+				object-fit:cover;
+			}
+		}
+		.order-item{
+			.product-type{
+				margin-bottom:.1rem;
+			}
+		}
+		.product-price{
+			padding-top:.1rem;
+			.price{
+				font-size:$font28;
+			}
+			.order-number{
+				margin-top:.04rem;
+				color:$fontGray;
+				font-size:$font18;
+			}
+		}
+		.show-infos{
+	    padding:0 .2rem;
+		}
+		.show-info{
+			padding-left:0;
+			padding-right:0;
+			border-bottom:1px solid #efefef;
+			.bui-label{
+				font-size:.24rem;
+				color:$fontGray;
+			}
+			.span1{
+				color:$fontColor;
+			}
+		}
+		.order-status{
+			padding:0 .2rem;
+			border-bottom-color:transparent;
+		}
+		.user-info{
+			.phone{
+				margin-left:.15rem;
+			}
+			.user{
+				margin-bottom:.1rem;
+				font-size:$font24;
+				color:$fontColor;
+			}
+			.address{
+				padding-left:.32rem;
+				padding-bottom:.1rem;
+				margin-bottom:0;
+        color:$fontGray;
+        font-size:$font20;
+        line-height:1.4;
+        @include bgNo(icon-address-gray,left,2px);
+        background-size:.24rem .26rem;
+			}
+		}
+	}
+	&-sure{
+		.default-address{
+			padding:0 .1rem;
+			border:1px solid $redColor;
+			color:$redColor;
+			font-size:$font16;
+			font-style: normal;
+		}
+		.order-item{
+      .wrap-order-info{
+      	padding-bottom:0;
+      }
+			.product-info{
+				background-color:#fff;
+			}
+			.order-info{
+        font-size:$font24;
+        color:$fontColor;
+			}
+			.product-name{
+				margin-top:.05rem;
+			}
+		}
+		
+		.show-info{
+			.bui-label{
+				color:$fontColor;
+			}
+		}
+		.bui-input{
+			color:$fontGray;
+		}
+		.text-name{
+			padding:.08rem 0;
+			color:$fontColor;
+			font-size:$font24;
+		}
+		.pay-part{
+			.pay-mark{
+				color:$fontColor;
+				font-size:$font24;
+			}
+			.pay-types{
+				padding-top:.2rem;
+			}
+			.bui-check{
+				position:relative;
+				display:inline-block;
+				width:1.5rem;
+			}
+			input:checked {
+				& ~ .label{
+				border:1px solid $mainColor;
+        color:$mainColor;
+          .tip{
+				  	display:block;
+				  }
+			  }
+
+			}
+			.tip{
+				display:none;
+				position:absolute;
+				right:0;
+				bottom:0;
+				border:.18rem solid transparent;
+				border-right-color:$mainColor;
+				border-bottom-color:$mainColor;
+				
+			}
+			.label{
+				padding:.1rem 0;
+				border:1px solid #ddd;
+				color:$fontColor;
+				background-color:#fff;
+				@include borderRadius(.05rem);
+				&:after{
+					content:'';
+					position:absolute;
+					right:0;
+					bottom:0;
+					z-index:2;
+					width:.3rem;
+					height:.3rem;
+					@include bgNo(icon-selected,right,bottom);
+			   	background-size:.24rem .24rem
+				}
+
+			}
+		}
+	}
+	.myOrder-page-footer{
+		border-top:1px solid #fbfbfb;
+	}
+  .myOrderSure-footer{
+  	height:.72rem;
+  	border-top:1px solid #fbfbfb;
+  }
+  .show-order-price{
+  	display:inline-block;
+  	padding-top:.05rem;
+  	margin-right:.2rem;
+    color:$redColor;
+    font-size:$font24;
+    vertical-align:middle;
+  }
+  .order-price-info{
+  	margin-right:.1rem;
+  	color:#ea4e45;
+  	font-size:$font20;
+  }
+  .submit-order{
+  	padding:.22rem .3rem;
+  	color:#fff;
+  	font-size:.22rem;
+  	background-color:$redColor;
+  }
+}
+
+.order-modal{
+	border-top:5px solid $mainColor;
+	.bui-dialog-head{
+		padding-top:.1rem;
+		color:$fontColor;
+		font-size:$font26;
+		.sure-tip{
+			display:none;
+		}
+	}
+	.order-modal-title{
+		.notice-title{
+			display:none;
+		}
+		.sure-tip{
+			display:block;
+		}
+		.sure-icon{
+			margin-right:.2rem;
+			margin-top:.2rem;
+			@include backgroundIcon(icon-current,.8rem ,.8rem);
+			background-size:contain;
+		}
+	}
+	.bui-dialog-main{
+		padding:0rem .5rem .15rem;
+		line-height:1.6;
+		color:$fontGray;
+		font-size:$font22;
+	}
+	.bui-dialog-foot{
+		.span1:first-child{
+			.bui-btn{
+				border-left:none;
+			}
+		}
+		.sure-btn{
+      color:$mainColor;
+		}
+	}
+}

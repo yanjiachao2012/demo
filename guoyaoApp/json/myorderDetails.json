@@ -1,0 +1,22 @@
+{
+    "returnValue": {
+        "orderTime": "1993-02-05 11:41:41",
+        "purshaseId": "440000200601296782",
+        "qutity": 25,
+        "totalPrice": 382,
+        "remark": "量易林定要置产中",
+        "isDelete": 2,
+        "GOODSID": "http://dummyimage.com/100x100/green/fff&text=hi",
+        "GNAME": "这九本习法目但公",
+        "APEC": "300x300",
+        "PRICE": 81,
+        "payType": "在线支付",
+        "PRODUCER": "品高公司",
+        "address": "天河软件园",
+        "orderStatus": "[0,1,2]",
+        "name": "张默默",
+        "phone": "12360245343",
+        "PURCHASE_DETAIL_ID": "42000020091027863X",
+        "REMAR": "我司客户备注"
+    }
+}

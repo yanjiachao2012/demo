@@ -1,0 +1,45 @@
+.page_search{
+	.bui-bar{
+		background: $mainColor;
+		.bui-bar-main{
+			background: $whiteColor;
+			@include borderRadius(25px);
+			line-height: 45px;
+			text-align: left;
+			padding: 0 20px;
+			input{
+				line-height: 45px;
+				border: none;
+				color: $fontBlack;
+				padding-left: 5px;
+				font-size: $font_16;
+			}
+		}
+	}
+	.listM{
+		background: #fff;
+		.listCon{
+			padding:0 18px;
+			background: $whiteColor;
+			.title{
+				.span1{
+					color: $fontBlack;
+					font-size: $font_18;
+					padding: 16px 0;
+				}
+				.icon_delete{
+					margin-top: 14px;
+				}
+			}
+			ul{
+				li{
+					padding: 18px 0;
+					.span1{
+						color: $fontGray;
+						@extend .textO;
+					}
+				}
+			}
+		}
+	}
+}

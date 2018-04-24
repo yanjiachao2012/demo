@@ -1,0 +1,57 @@
+@charset "utf-8";
+.main-nav{
+	.bui-btn{
+		padding-top:.1rem;
+		border:none;
+		.nav-icon{
+			width:.32rem ;
+			height:.32rem;
+	  }
+	}
+	.span1{
+		padding-top:.05rem;
+		padding-bottom:.05rem;
+		color:#999;
+	}
+	
+	.home-icon{
+		@include backgroundIcon(icon-home-gray,.28rem,.3rem);
+		background-size:cover;
+	}
+	.sort-icon{
+		@include backgroundIcon(icon-sort-gray,.32rem,.26rem);
+		background-size:cover;
+	}
+	.online-icon{
+		@include backgroundIcon(icon-online-gray,.32rem,.3rem);
+		background-size:cover;
+	}
+	.cart-icon{
+		@include backgroundIcon(icon-cart-gray,.32rem,.32rem);
+		background-size:cover;
+	}
+	.user-icon{
+		@include backgroundIcon(icon-user-gray,.32rem,.32rem);
+		background-size:cover;
+	}
+	.active{
+		.home-icon{
+       background-image: url(../images/icon-home.png);
+		}
+		.sort-icon{
+      background-image:url(../images/icon-sort.png);
+		}
+		.online-icon{
+      background-image:url(../images/icon-online.png);
+		}
+		.cart-icon{
+      background-image:url(../images/icon-cart.png);
+		}
+		.user-icon{
+			background-image:url(../images/icon-user.png);
+		}
+		.span1{
+			color:#1FBDB0;
+		}
+	}
+}

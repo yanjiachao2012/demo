@@ -1,0 +1,51 @@
+@charset "utf-8";
+.page_order{
+	.bui-bar{
+		background: $mainColor;
+		.bui-bar-right{
+			.bui-btn{
+				position: relative;
+				.num{
+					display: inline-block;
+					line-height: 24px;
+					height: 24px;
+					width: 24px;
+					text-align: center;
+					border-radius: 50%;
+					background: $redColor;
+					position: absolute;
+					top: 12px;
+					right: -12px;
+					font-size: $font_14;
+				}
+			}
+		}
+	}
+	.selectD{
+		position: relative;
+		z-index: 99;
+		.bui-dropdown{
+			.bui-btn{
+				text-align: center;		
+				color: $fontBlack;	
+				border:none;
+				border-bottom: 1px solid $borderGray;
+				&.active{
+					background:#fff !important;
+				}
+			}
+			.bui-menu-bottom{
+				width: 100%!important;
+			}
+		}
+		.columS{
+			display: inline-block;
+			width: 1px;
+			height: 40px;
+			position: absolute;
+			background: $borderGray;
+			top: 10px;
+			left: 50%;
+		}
+	}
+}

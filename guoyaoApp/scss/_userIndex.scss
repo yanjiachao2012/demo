@@ -1,0 +1,168 @@
+@charset "utf-8";
+.userIndex-page{
+	height:100%;
+	&-header{
+		@include backgroundIcon(icon-user-bg,100%,2rem);
+		background-size:cover;
+		.no-login{
+			margin-top:.5rem;
+		}
+		.default-icon{
+			width:.86rem;
+			height:.86rem;
+		}
+		.login-tip{
+			margin-top:.05rem;
+			@include opacity(.6);
+		}
+		.user-info{
+      padding:.5rem .3rem 0;
+		}
+		.user-pic{
+			margin-right:.2rem;
+			width:.86rem;
+			height:.86rem;
+			img{
+				width:100%;
+				height:100%;
+				object-fit:cover;
+			}
+		}
+		.icon-listright{
+			color:#fff;
+			font-size:$font30;
+		}
+		.user-name{
+			margin-bottom:.08rem;
+			font-size:$font26;
+			color:#fff;
+		}
+		.user-address{
+			color:#fff;
+			font-size:$font18;
+			@include opacity(.8);
+		}
+		.news-icon{
+			position:absolute;
+			top:.2rem;
+			right:.2rem;
+			@include backgroundIcon(icon-news,.3rem,.28rem);
+			background-size:contain;
+			.bui-badges{
+				position:absolute;
+				right:-.1rem;
+				top:-.1rem;
+				margin:0;
+			}
+		}
+	}
+	&-nav{
+		.bui-nav{
+			.bui-btn{
+				position:relative;
+				padding-top:.18rem;
+				padding-bottom:.17rem;
+				border:none;
+			}
+			.bui-badges{
+				left:60%;
+				top:-.1rem;
+				margin-top:.03rem;
+				min-width:.25rem;
+				min-height:.25rem;
+				font-size:.18rem;
+			}
+		}
+		.wait-icon{
+			@include backgroundIcon(icon-list-sure,.4rem,.4rem);
+			background-size:contain;
+		}
+		.query-icon{
+			@include backgroundIcon(icon-query,.4rem,.4rem);
+			background-size:contain;
+		}
+		.order-icon{
+			@include backgroundIcon(icon-list,.4rem,.4rem);
+			background-size:contain;
+		}
+		.span1{
+			margin-top:.1rem;
+			color:#666;
+			font-size:$font22;
+		}
+		
+	}
+	&-list{
+		padding:0 .2rem;
+		border-top:.15rem solid #F7F8F9;
+		.bui-btn{
+			padding-left:0;
+			padding-right:0;
+			border:none;
+			border-bottom:1px solid #eee;
+		}
+		.icon-listright{
+			color:#ccc;
+		}
+		.list-icon{
+			display:inline-block;
+			margin-right:.15rem;
+			width:.3rem;
+			height:.3rem;
+			background-size:contain;
+		}
+		.collect-icon{
+			@include bgNo(icon-heart);
+		}
+		.awlay-icon{
+			@include bgNo(icon-always);
+		}
+		.address-icon{
+			@include bgNo(icon-address);
+		}
+		.fp-icon{
+			@include bgNo(icon-fp-info);
+		}
+		.card-icon{
+			@include bgNo(icon-id-info);
+		}
+		.modify-icon{
+			@include bgNo(icon-modify);
+		}
+		.span1{
+			color:#333;
+			font-size:$font24;
+		}
+	}
+}
+//个人信息
+.userInfo-page{
+   &-list{
+   	  padding:0 .2rem;
+   	  .bui-btn{
+   	  	padding-left:0;
+   	  	padding-right:0;
+   	  	font-size:$font22;
+   	  	border:none;
+   	  	border-bottom:1px solid #eee;
+   	  }
+   	  .bui-label{
+   	  	width:1.2rem;
+   	  	color:#999;
+   	  	
+   	  }
+   	  .bui-btn{
+   	  	color:#333;
+   	  }
+   	  .user-pic{
+   	  	display:inline-block;
+   	  	width:.86rem;
+   	  	height:.86rem;
+   	  	border:1px solid #efefef;
+   	  }
+  }
+  .quit-btn{
+  	font-size:$font24;
+  	background-color:$redColor;
+  }
+}

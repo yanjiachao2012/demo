@@ -1,0 +1,131 @@
+@charset "utf-8";
+.register-page{
+	main{
+    background-color:#F7F8F9;
+	}
+	&-process{
+		padding:.25rem .2rem;
+		background-color:#fff;
+		.process-part{
+			position:relative;
+		}
+		.process-dot{
+			position:relative;
+			z-index:10;
+			display: inline-block;
+			height:.4rem;
+			width:.4rem;
+			color:#999;
+			line-height: .4rem;
+			background-color:#eee;
+		}
+		.process-line{
+			position:absolute;
+			width:100%;
+			left:0;
+			top:.16rem;
+			height:5px;
+		  background-color:#eee;
+		}
+		.process-text{
+			margin-top:.1rem;
+			color:#999;
+		}
+		.active-process{
+			.process-dot{
+				color:#fff;
+				background-color:$greenColor;
+			}
+			.process-line{
+				background-color:$greenColor;
+			}
+			.process-text{
+				color:#333;
+			}
+		}
+	}
+	&-form{
+		border-top:.2rem solid #F7F8F9;
+		.change-label{
+			width:2.1rem;
+		}
+		.input-file{
+			position:relative;
+			width:100%;
+			opacity: 0;
+			z-index:11;
+			filter: alpha(opacity=0);
+		}
+		.file-list{
+			.bui-btn{
+				padding:.2rem 0;
+			}
+		}
+		.file-icon{
+			@include backgroundIcon(icon-file,.3rem,.3rem);
+			background-size:contain;
+		}
+		.file-text{
+			position:absolute;
+			top:.1rem;
+			left:0;
+		}
+	}
+	&-result{
+		padding:.5rem 0 40%;
+    .success-icon{
+    	@include backgroundIcon(icon-current,.5rem,.5rem);
+    	background-size:contain;
+    }
+    .success-tip{
+    	margin:.2rem 0 .5rem;
+    	font-size:$font24;
+    	color:$fontColor;
+    }
+    .back-login{
+    	width:2.5rem;
+    	background-color:$greenColor;
+    }
+    .back-tip{
+    	margin-top:.3rem;
+    	color:#999;
+    	.redColor{
+    		margin:0 .1rem;
+        color:$redColor;
+    	}
+    }
+	}
+	&-detail{
+		padding:.15rem .2rem;
+		.item-title{
+			font-size:$font18;
+			color:#999;
+		}
+		.indent-p{
+			text-indent: 2em;
+		}
+		.detail-p{
+				color:#999;
+		}
+	}
+	&-footer{
+		padding-bottom:.1rem;
+		border-top:1px solid #efefef;
+		background-color:#fff;
+		.span1{
+			padding-top:.1rem;
+			padding-bottom:.1rem;
+		}
+		.bui-btn{
+			font-size:font24;
+			border:1px solid #ddd;
+		}
+		.cancel-btn{
+			color:#333;
+		}
+		.next-btn{
+			border:none;
+      		background-color:$greenColor;
+		}
+	}
+}

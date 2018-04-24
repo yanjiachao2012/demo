@@ -1,0 +1,13 @@
+{
+    "data":
+    {
+        "id": "123",
+        "sculpture": "images/icon-user-example.png",
+        "nickname": "新塘物业",
+        "address": "广东省广州市新塘物业",
+        "tel": "13399998888",
+        "email": "471855633@qq.com"
+    },
+    "info": "获取成功",
+    "status": 0
+}

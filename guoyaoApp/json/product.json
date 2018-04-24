@@ -1,0 +1,30 @@
+{
+    "data":
+    {
+        "goodsId": "123",
+        "goodsName": "九芝堂大力丸",
+        "goodsImg": [
+        {
+            "id": "1",
+            "url": "json/123.jpg"
+        },
+        {
+            "id": "2",
+            "url": "json/123.jpg"
+        },
+        {
+            "id": "3",
+            "url": "json/123.jpg"
+        }],
+        "goodsDosage": "10S(A1500单位/D3 500单位,一次性包装)*3板(0-1岁)",
+        "goodsPrice": "23.33",
+        "goodsCode": "0641400",
+        "goodsProducer": "九芝堂",
+        "goodsSpec": "25mg/400mg*50T",
+        "goodsMsunitno": "盒",
+        "goodsPackNum": "400",
+        "isCollect": true
+    },
+    "info": "获取成功",
+    "status": 0
+}

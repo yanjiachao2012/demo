@@ -1,0 +1,268 @@
+.pdetails-page {
+    .bui-bar {
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        .bui-bar-left {
+            .icon-back {
+                color: $fontColor;
+            }
+        }
+        .bui-bar-main {
+            color: $fontColor;
+        }
+    }
+    .bui-slide {
+        margin-bottom: 1px;
+        img {
+            width: 90%;
+            height: 85%;
+            object-fit: cover;
+        }
+    }
+    .slide-index {
+        position: absolute;
+        bottom: .1rem;
+        right: .15rem;
+        padding: .04rem .15rem;
+        font-size: $font22;
+        letter-spacing: -1px;
+        background-color: #D8D8D8;
+        @include borderRadius(.2rem);
+        .number {
+            display: inline-block;
+        }
+    }
+    .border-line {
+        height: .12rem;
+        @include gradient(to bottom, #fff, #B5B5B5);
+        @include opacity(.4);
+    }
+    .short-details {
+        border-bottom: .2rem solid #f7f8f9;
+        .title {
+            margin-bottom: .05rem;
+            font-size: $font24;
+            color: $fontColor;
+            line-height: 1;
+        }
+        .info {
+            color: $fontGray;
+            font-size: $font18;
+        }
+        .price {
+            font-size: $font26;
+            color: $redColor;
+            font-weight: bold;
+        }
+        .old-price{
+            margin-left:.3rem;
+            font-size:$font20;
+            font-weight:normal;
+            color:#999;
+            text-decoration:line-through;
+        }
+    }
+    .sale-details{
+        border-bottom: .2rem solid #f7f8f9;
+        .wrap-title{
+            padding:.15rem .2rem;
+        }
+        .icon-listdown{
+            font-size:$font28;
+            color:#ccc;
+            transition:all .2s ease-in;
+        }
+        .active{
+            .icon-listdown{
+                transform:rotate(180deg);
+            }
+        }
+        .title{
+            margin-right:.2rem;
+            color:$fontColor;
+            font-size:$font22;
+        }
+        .sale-tip{
+            font-size:$font20;
+        }
+        .sale-item{
+            padding:.1rem .2rem;
+            font-size:$font20;
+            color:$font666;
+            border-top:1px solid #ddd;
+        }
+        .mark{
+            padding:0 .08rem;
+            margin-right:.15rem;
+            height:.3rem;
+            color:$redColor;
+            font-size:$font18;
+            border:1px solid $redColor;
+        }
+        .icon-right{
+            @include backgroundIcon(icon-right-gray,.28rem,.28rem);
+            background-size:.2rem .2rem;
+        }
+    }
+    .long-details {
+        padding-top: .1rem;
+        padding-bottom: .1rem;
+        border-bottom: 5px solid #f7f8f9;
+        .mark {
+            font-size: $font24;
+            color: $fontColor;
+        }
+        .online {
+            padding: .05rem .2rem;
+            display: inline-block;
+            border: 1px solid $mainColor;
+            color: $mainColor;
+            @include borderRadius(.2rem);
+        }
+        .online-icon {
+            vertical-align: middle;
+            @include backgroundIcon(icon-online, .3rem, .3rem);
+            background-size: contain;
+        }
+    }
+    .details-list {
+        border: 1px solid #ddd;
+        .bui-btn {
+            padding: 0;
+            color: $fontColor;
+            font-size: $font22;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .item-left {
+            padding: .2rem .1rem .2rem 0;
+            text-align: right;
+        }
+        .item-right {
+            padding: .2rem 0 .2rem .1rem;
+            border-left: 1px solid #ddd;
+            line-height: 1.4;
+        }
+    }
+
+
+    .select-pic {
+        margin-top: -.4rem;
+        margin-right: .2rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        line-height: 1.6rem;
+        border: 1px solid #ddd;
+        @include borderRadius(.1rem);
+        background-color: #fff;
+        .pic {
+            width: 1.5rem;
+            height: 1.5rem;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+    }
+    .select-title {
+        margin-top: .2rem;
+        font-size: $font24;
+        line-height: 1.4;
+        color: #000;
+    }
+    .select-price {
+        margin-top: .1rem;
+        color: $redColor;
+        line-height: 1.4;
+        font-size: $font24;
+        font-weight: bold;
+    }
+    .number-mark {
+        color: $fontColor;
+    }
+    .wrap-select {
+        margin-top: .2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #efefef;
+    }
+    .select-number {
+        display: inline-block; // border:1px solid #ddd;
+        overflow: hidden;
+        .bui-input {
+            display: inline-block;
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+            width: .6rem;
+            text-align: center;
+        }
+        .bui-number {
+            width: 1.299rem;
+            .bui-number-prev {
+                height: .4rem;
+                line-height: .38rem;
+                width: .4rem;
+                background: transparent;
+                border-right: 1px solid #ddd;
+                font-size: .26rem;
+                color: #999;
+            }
+            .bui-number-next {
+                height: .4rem;
+                line-height: .38rem;
+                width: .4rem;
+                background: transparent;
+                border-left: 1px solid #ddd;
+                font-size: .26rem;
+                color: #333;
+            }
+            input {
+                height: .4rem;
+                line-height: .4rem;
+                padding: 0;
+                font-size: .26rem;
+                color: #4B3A3A;
+            }
+        }
+        .icon-minus {
+            border-right: 1px solid #ddd;
+            color: $fontGray;
+        }
+        .icon-plus {
+            border-left: 1px solid #ddd;
+            color: $font666;
+        }
+        .btn {
+            font-size: .3rem;
+            padding: .15rem;
+        }
+    }
+    .sure-btn {
+        background-color: $redColor;
+    }
+    .pdetails-footer {
+        height: .7rem;
+    }
+    .join-cart {
+        background-color: #FF9236;
+    }
+    .now-buy {
+        background-color: $redColor;
+    }
+    .pdetails-operate {
+        border-top: 1px solid #ddd;
+        .span2 {
+            padding-top: .2rem;
+            padding-bottom: .25rem;
+            font-size: $font24;
+        }
+    }
+    .collect-icon {
+        margin-top: .05rem;
+        @include backgroundIcon(icon-heart-gray, .3rem, .28rem);
+        background-size: contain;
+    }
+    .collect-tip {
+        font-size: $font16;
+    }
+}

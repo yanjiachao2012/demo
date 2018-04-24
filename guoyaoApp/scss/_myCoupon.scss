@@ -1,0 +1,153 @@
+.myCoupon-page{
+	.coupon-list{
+		padding: 0.17rem;
+		.coupon-box{
+			height: 1.09rem;
+			padding: 0;
+			padding-right: 0.1rem;
+			margin-bottom: 0.17rem;
+			position: relative;
+			border-bottom: 0;
+			background: url(../images/btn_bg.png);
+			background-size: 100% auto;
+			.img{
+				@include backgroundIcon(valueG,1.23rem, 1.09rem);
+				background-size: 1.23rem auto;
+				margin-right: 0.2rem;
+				color: #fff;
+				font-size: 0.17rem;
+				text-align: center;
+				h3{
+					margin-top: 0.25rem;
+					strong{
+						font-weight: normal;
+						font-size: 0.3rem;
+					}
+				}
+				p{
+					color: #fff;
+					margin-top: 0.15rem;
+				}
+			}
+			.imgGray{
+				@include backgroundIcon(valuegray,1.23rem, 1.09rem);
+				background-size: 1.23rem auto;
+			}
+			.span1{
+				padding-right:.1rem;
+				.item-title{
+					font-size: .2rem;
+					color: #333333;
+					min-height: 0.52rem;
+					line-height: 0.24rem;
+					margin-bottom: 0.05rem;
+					text-overflow: -o-ellipsis-lastline;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+				}
+				.title-gray{
+					color: #999999;
+					padding-right: 0.9rem;
+				}
+				.color-gray{
+					color: #999999;
+				}
+				.item-text{
+					color: #999999;
+					font-size: 0.18rem;
+				}
+				.text-gray{
+					color: #CCCCCC;
+					font-size: 0.18rem;
+				}
+				.text-green{
+					color: #33C9BD;
+					font-size: 0.18rem;
+				}
+				.btn{
+					display: inline-block;
+					padding: 0.07rem 0.14rem;
+					color: #15CABC;
+					font-size: 0.16rem;
+					border-radius: 0.29rem;
+					border: 1px solid #15CABC;
+				}
+			}
+			.icon_use{
+				position: absolute;
+				right: 0.04rem;
+				top: 0;
+				@include backgroundIcon(icon_use,0.88rem, 0.67rem);
+				background-size: 0.88rem auto;
+			}
+			.icon_late{
+				position: absolute;
+				right: 0.04rem;
+				top: 0;
+				@include backgroundIcon(icon_late,0.89rem, 0.67rem);
+				background-size: 0.89rem auto;
+			}
+			.sideR{
+				width: 1.14rem;
+				height: 1.09rem;
+				text-align: center;
+				border-left: 1px dashed #F3F5F8;
+				p{
+					color: #FF8B2E;
+					font-size: 0.14rem;
+					margin: 0.25rem 0 0.2rem 0;
+				}
+				.btnOrg{
+					display: inline-block;
+					padding: 0.07rem 0.14rem;
+					color: #fff;
+					font-size: 0.16rem;
+					border-radius: 0.29rem;
+					border: none;
+					background: #FF8B2E;  
+					background: -webkit-linear-gradient(left, #FFB130 , #FF8B2D); 
+					background: -o-linear-gradient(right, #FFB130, #FF8B2D); 
+					background: -moz-linear-gradient(right, #FFB130, #FF8B2D); 
+					background: linear-gradient(to right, #FFB130 , #FF8B2D);
+				}
+				.icon_finish{
+					@include backgroundIcon(finish,0.89rem, 0.68rem);
+					background-size: 0.89rem auto;
+					margin-top: 0.2rem;
+				}
+				.icon_get{
+					@include backgroundIcon(finish1,0.89rem, 0.68rem);
+					background-size: 0.89rem auto;
+					margin-top: 0.2rem;
+				}
+			}
+		}
+	}
+}
+.coupon-footer{
+	padding: 0.14rem 0.5rem;
+	font-size: 0.2rem;
+	background: #fff;
+	p{
+		color: #666666;
+		.icon_coupon{
+			@include backgroundIcon(quan,0.3rem, 0.21rem);
+			background-size: 0.3rem auto;
+			vertical-align: -1px;
+			margin-right: 0.05rem;
+		}
+		strong{
+			font-weight: normal;
+			color: #F9493F;
+		}
+	}
+	.bui-btn{
+		color: #15CABC;
+		border: 0;
+		padding: 0;
+		min-height: auto;
+	}
+}

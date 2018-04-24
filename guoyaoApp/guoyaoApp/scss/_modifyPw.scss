@@ -1,0 +1,12 @@
+@charset "utf-8";
+.modifyPw-page{
+	.modifyPw-btn{
+		margin:.3rem .2rem;
+		background-color:$greenColor;
+		border:none;
+	}
+	.eye-icon{
+		@include backgroundIcon(icon-eye,.3rem,.18rem);
+		background-size: cover;
+	}
+}

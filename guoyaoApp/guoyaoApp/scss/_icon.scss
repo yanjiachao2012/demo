@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*搜索页面图标*/
+.icon_search{
+	@include bg(23px,23px,"icon-search");
+}
+.icon_delete{
+	@include bg(29px,26px,"icon-remove");
+}
+.icon_save{
+	@include bg(20px,20px,"icon-heart");
+	margin-right: 10px;
+}
+.icon_remove{
+    color: #ccc;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 50px;
+    -webkit-text-stroke-width:0;
+    display: none;
+}
+
+/*极速下单图标*/
+.icon_msg{
+	@include bg(31px,28px,"icon-news");
+}

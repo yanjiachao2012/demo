@@ -1,0 +1,55 @@
+@charset "utf-8";
+.page_invoiceMessage{
+	background: $mainColor;
+	.bui-bar{
+		background: $mainColor;
+	}
+	main{
+		background: $mainColor;
+		padding: 17px;
+		.orderList{
+			background: #fff;
+			border-radius: 10px;
+			overflow: hidden;
+			.bui-list{
+				dt{
+					border-bottom: 1px dashed $borderGray!important;
+					color: $fontBlack;
+					position: relative;
+					.circle{
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						border-radius: 50%;
+						background: $mainColor;
+						position: absolute;
+						left: -10px;
+						bottom: -10px;
+					}
+					.circleR{
+						left: auto;
+						right: -10px;
+					}
+				}
+				dd{
+					border-bottom: 1px solid $borderGray!important;
+					.span1{
+						color: $fontGray;
+						font-size: $font_18;
+					}
+					span{
+						font-size: $font_18;
+						color: $fontBlack;
+						max-width: 80%;
+						&.money{
+							color: $redColor;
+						}
+						&.more{
+							color: $mainColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}

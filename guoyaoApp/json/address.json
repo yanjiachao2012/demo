@@ -1,0 +1,29 @@
+{
+    "data": [
+    {
+        "id": "2",
+        "addressname": "张三丰",
+        "address": "广州市天河区软件路",
+        "addresscode": "510000",
+        "addresstel": "13319273382",
+        "isDefault": false
+    },
+    {
+        "id": "1",
+        "addressname": "张三丰",
+        "address": "广州市天河区软件路",
+        "addresscode": "510000",
+        "addresstel": "13666666666",
+        "isDefault": true
+    },
+    {
+        "id": "3",
+        "addressname": "张三丰",
+        "address": "广州市天河区软件路",
+        "addresscode": "510000",
+        "addresstel": "13377777777",
+        "isDefault": false
+    }],
+    "info": "获取成功",
+    "status": 0
+}

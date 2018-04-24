@@ -1,0 +1,62 @@
+@charset "utf-8";
+.login-page{
+  main{
+    @include backgroundIcon(login-bg,100%, 100%,left,bottom);
+    background-size:contain;
+  }
+  &-logo{
+    width:70%;
+    object-fit:cover;
+  }
+  &-form{
+    padding-left: .3rem;
+    padding-right: .3rem;
+    .bui-list{
+      padding-left:.1rem;
+      padding-right:.1rem;
+        border-top: none;
+        margin-bottom: .5rem;
+    }
+    .bui-btn{
+      padding-left: 0;
+      padding-right: 0;
+      border-left-color:#cfcfcf;
+    }
+    .bui-label{
+      width:.5rem;
+    }
+    .bui-input {
+      height: .6rem;
+      color:#999;
+    }
+    .account-label{
+      @include backgroundIcon(icon-account,.5rem, .32rem,left,center);
+      background-size: contain;
+    }
+    .icon-lock{
+      color:#999;
+      font-size: $font36;
+    }
+  }
+  &-operate{
+    margin-top:.2rem;
+    .bui-btn{
+      background-color:transparent;
+    }
+    .forget-btn,.register-btn{
+      color:$greenColor;
+      
+    }
+    .wrap-register-btn{
+      color:#666;
+    }
+  }
+  .login-btn{
+    color:#fff;
+    background-color:$greenColor;
+    @include borderRadius(.5rem);
+  }
+  .logo{
+      margin: 1rem auto .5rem;
+  }
+}

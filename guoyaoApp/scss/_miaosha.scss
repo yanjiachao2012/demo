@@ -1,0 +1,54 @@
+.miaosha-page{
+	.miaosha-banner{
+		height:2.2rem;
+		overflow:hidden;
+		.pic{
+			object-fit:cover;
+		}
+	}
+	.icon-cart{
+		background-color:transparent;
+		@include backgroundIcon(icon-cart-white,.32rem,.32rem)
+		background-size:contain;
+	}
+	.tip-text{
+		position:relative;
+		color:$font666;
+		background-color:#f7f8f9;
+		&:after{
+			position:absolute;
+			left:0;
+			top:50%;
+			content:'';
+			width:100%;
+			height:1px;
+			background-color:#eee;
+		}
+		.text{
+			position:relative;
+			z-index:10;
+			padding:.1rem .3rem;
+			background-color:#f7f8f9;
+		}
+	}
+	.miaosha-ad{
+		padding:.05rem 0;
+		height:1rem;
+		overflow:hidden;
+		background-color:#fff;
+		.pic{
+			object-fit:cover;
+		}
+	}
+	.show-time{
+  			text-align: center;
+  			font-size: .2rem;
+  			background-color:#e6f3f2;
+  		}
+  		.time{
+  			padding:0 .05rem;
+  			color:#fff;
+  			background-color:$redColor;
+  			@include borderRadius(.05rem);
+  		}
+}

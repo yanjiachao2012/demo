@@ -1,0 +1,41 @@
+@charset "utf-8";
+@mixin borderRadius($size:.1rem){
+  -webkit-border-radius:$size;
+  border-radius:$size;
+}
+@mixin opacity($opacity:.5){
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity*100);
+}
+
+@mixin backgroundIcon($url,$w:.5rem,$h:.5rem,$positionL:center,$positionT:center,$display:inline-block){
+    display:$display;
+    width:$w;
+    height:$h;
+    background-image: url('../images/'+$url+'.png');
+    background-position: $positionL $positionT;
+    background-repeat: no-repeat;
+}
+/*只有背景元素的情况*/
+@mixin bgNo($url,$positionL:center,$positionT:center){
+
+    background-image: url('../images/'+$url+'.png');
+    background-position: $positionL $positionT;
+    background-repeat: no-repeat;
+}
+@mixin gradient($position,$color...){
+    background-image:-ms-linear-gradient($position,$color);
+    background-image:linear-gradient($position,$color);
+}
+
+@mixin bg($w, $h, $img_url) {
+    display: inline-block;
+    width: $w;
+    height: $h;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/"+$img_url+".png");
+    background-position: center;
+    background-color: transparent;
+    vertical-align: middle;
+}

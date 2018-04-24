@@ -1,0 +1,56 @@
+@charset "utf-8";
+.sort-page{
+	height:100%;
+	
+	&-left{
+		position:absolute;
+		bottom:0;
+		top:.68rem;
+		width:25%;
+		overflow:auto;
+    background-color:#f3f5f8;
+    .left-sort{
+    	padding:.2rem 0;
+    	color:#666;
+    	font-size:$font24;
+    	border-bottom:1px solid #cfcfcf;
+    	border-right:1px solid #cfcfcf;
+    }
+    .left-sort-active{
+    	color:$mainColor;
+    	border-right:none;
+    	border-left:1px solid $mainColor;
+    	background-color:#fff;
+    }
+	}
+	&-right{
+		position:absolute;
+		left:25%;
+		bottom:0;
+		right:0;
+		top:.68rem;
+		overflow:auto;
+		.sort-content{
+			padding:0 .2rem;
+			display:flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		.sort-item{
+			width:33.33%;
+			&:nth-child(3n+2){
+				text-align:center;
+			}
+			&:nth-child(3n){
+         text-align:right;
+			}
+		}
+		.sort-name{
+			display:block;
+			padding:.21rem .1rem .22rem 0;
+			font-size:$font22;
+			color:#333;
+			border-bottom:1px solid #eee;
+		}
+	}
+}

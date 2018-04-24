@@ -1,0 +1,178 @@
+
+<div class="bui-page register-page">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn btn-back"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">会员注册</div>
+            <div class="bui-bar-right"></div>
+        </div>
+    </header>
+    <main>
+        <div class="register-page-process">
+            <div class="bui-fluid" id="stepProcess">
+                <div class="span4 bui-align-center process-part active-process">
+                    <span class="process-dot ring">1</span>
+                    <div class="process-line"></div>
+                    <div class="process-text">填写信息</div>
+                </div>
+                <div class="span4 bui-align-center process-part">
+                    <span class="process-dot ring">2</span>
+                    <div class="process-line"></div>
+                    <div class="process-text">提交资料</div>
+                </div>
+                <div class="span4 bui-align-center process-part">
+                    <span class="process-dot ring">3</span>
+                    <div class="process-line"></div>
+                    <div class="process-text">完成</div>
+                </div>
+            </div>
+        </div>
+        <div class="register-page-form">
+            <div id="step-first">
+                <ul class="bui-list form-list">
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label">企业名称</label>
+                        <div class="span1">
+                            <div class="bui-input user-input">
+                                <input id="user" class="" type="text" placeholder="请输入企业名称（全称）"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box ">
+                        <label class="bui-label">企业地址</label>
+                        <div class="span1">
+                            <div class="bui-input password-input">
+                                <input id="password" type="text" placeholder="请输入地址信息"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label">联系人</label>
+                        <div class="span1">
+                            <div class="bui-input user-input">
+                                <input id="user" class="" type="text" placeholder="请输入联系人"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box ">
+                        <label class="bui-label">联系电话</label>
+                        <div class="span1">
+                            <div class="bui-input password-input">
+                                <input id="password" type="text" placeholder="请输入联系电话"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label">QQ号码</label>
+                        <div class="span1">
+                            <div class="bui-input user-input">
+                                <input id="user" class="" type="text" placeholder="请输入QQ号码"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box ">
+                        <label class="bui-label">电子邮箱</label>
+                        <div class="span1">
+                            <div class="bui-input password-input">
+                                <input id="password" type="text" placeholder="请输入电子邮箱"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label">预约品种</label>
+                        <div class="span1">
+                            <div class="bui-input user-input">
+                                <input id="user" class="" type="text" placeholder="请输入预约品种"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="register-page-detail">
+                    <h3 class="item-title">客户注册说明：</h3>
+                    <div class="detail">
+                        <p class="detail-p indent-p">
+                            根据GSP和我司相关要求，首营客户将相关证照和资料上传电子版，待审核无误后，由我司销售代表协助您完成首营注册。基本注册流程：
+                        </p>
+                        <p class="detail-p">1.客户填写信息和上传电子版证照资料</p>
+                        <p class="detail-p">2.销售代表复核注册信息，并与客户沟通联系</p>
+                        <p class="detail-p">3.客户将首营资料邮寄至国控广州完成注册</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="step-second" style="display:none;">
+                <ul class="bui-list form-list file-list">
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label change-label">企业法人营业执照</label>
+                        <div class="span1">
+                            <input id="password" class="input-file" type="file" placeholder="上传附件"/>
+                            <span class="file-text">上传附件</span>
+                        </div>
+                        <span class="file-icon"></span>
+                    </li>
+                    <li class="bui-btn bui-box ">
+                        <label class="bui-label change-label">药品经营许可证</label>
+                        <div class="span1">
+                            <input id="password" class="input-file" type="file" placeholder="上传附件"/>
+                            <span class="file-text">上传附件</span>
+                        </div>
+                        <span class="file-icon"></span>
+                    </li>
+                    <li class="bui-btn bui-box clearactive">
+                        <label class="bui-label change-label">GSP认证证书</label>
+                        <div class="span1">
+                            <input id="password" class="input-file" type="file" placeholder="上传附件"/>
+                            <span class="file-text">上传附件</span>
+                        </div>
+                        <span class="file-icon"></span>
+                    </li>
+                    <li class="bui-btn bui-box ">
+                        <label class="bui-label change-label">税务登记证(国税)</label>
+                        <div class="span1">
+                            <input id="password" class="input-file" type="file" placeholder="上传附件"/>
+                            <span class="file-text">上传附件</span>
+                        </div>
+                        <span class="file-icon"></span>
+                    </li>
+                </ul>
+                <div class="register-page-detail">
+                    <h3 class="item-title">资质名称：</h3>
+                    <div class="detail">
+
+                        <p class="detail-p">
+                            1、上传附件请按需要上传，附件格式为rar、zip、pdf、jpg、png、bmp、xls、xlsx、doc、docx
+                        </p>
+                        <p class="detail-p">2、多个附件请打包成rar文件再上传。上传的附件文件不能超过10M</p>
+                        <p class="detail-p">
+                            提示：所有证照、资料请加盖公司公章。采购人员法人授权委托书包含身份证复印件和上岗证。
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="step-third" style="display:none;">
+                <div class="register-page-result bui-align-center white-bg">
+                    <i class="success-icon"></i>
+                    <p class="success-tip">恭喜你，注册成功！</p>
+                    <div class="bui-btn no-border white-font round back-login btn-back">
+                        返回登录
+                    </div>
+                    <p class="back-tip">页面将在<span class="redColor">3</span>秒后自动关闭</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="register-page-footer">
+        <div class="bui-box-space">
+            <div class="span1">
+                <div class="bui-btn cancel-btn round" id="prev">取消</div>
+            </div>
+            <div class="span1">
+                <div class="bui-btn next-btn white-font round" id="next">下一步</div>
+            </div>
+        </div>
+    </footer>
+</div>

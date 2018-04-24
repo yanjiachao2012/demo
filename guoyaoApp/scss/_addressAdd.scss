@@ -1,0 +1,16 @@
+@charset "utf-8";
+.modifyAddress-page{
+	.modifyAddress-btn{
+		margin:.3rem .2rem;
+		background-color:$greenColor;
+		border:none;
+	}
+	.eye-icon{
+		@include backgroundIcon(icon-eye,.3rem,.18rem);
+		background-size: cover;
+	}
+	.set-default{
+		margin-top: .2rem;
+		margin-left: .1rem;
+	}
+}

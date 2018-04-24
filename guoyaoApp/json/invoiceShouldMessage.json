@@ -1,0 +1,16 @@
+{
+    "data":
+    [{
+        "id": "123",
+        "price": "23.33",
+        "billingDate": "2018-11-12",
+        "invoiceCode": "06112300"
+    },{
+        "id": "1234",
+        "price": "23.33",
+        "billingDate": "2018-11-12",
+        "invoiceCode": "06112300"
+    }],
+    "info": "获取成功",
+    "status": 0
+}

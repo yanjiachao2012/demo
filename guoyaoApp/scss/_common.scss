@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/**主题颜色**/
+
+$mainColor:#11B8AB;
+
+/**红色**/
+
+$redColor:#F9493F;
+
+/**绿色**/
+
+$greenColor:#15CABC;
+
+/**主要字体颜色*/
+
+$fontColor:#333;
+
+/****/
+
+$font666:#666;
+
+
+/*白色*/
+
+$whiteColor:#ffffff;
+
+
+/*字体颜色*/
+
+$fontGray:#999999;
+$fontBlack:#333333;
+$fontBlue:#35C3B8;
+
+
+/*字体大小*/
+
+$font_20:20px;
+$font_18:18px;
+$font_16:16px;
+$font_14:14px;
+
+
+/*字体大小*/
+
+$font_18:18px;
+$font_16:16px;
+$font_14:14px;
+
+
+/*边框颜色*/
+
+$borderGray:#E4E6E8;
+
+
+/*用点隐藏超出内容*/
+
+.textO {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+b {
+    font-weight: normal;
+}
+
+.white-font {
+    color: #fff;
+}
+
+.overflowH {
+    overflow: hidden;
+}
+
+.no-border {
+    border: none;
+}
+
+.no-autofill:-webkit-autofill {
+    box-shadow: 0 0 0px 200px white inset;
+}
+
+.white-page main {
+    background-color: #fff;
+}
+
+.gray-page main {
+    background-color: #f3f5f9;
+}
+
+.gray-page .bui-scroll-main {
+    background-color: #f3f5f9;
+}
+
+.redColor {
+    color: $redColor;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.common-header {
+    .bui-bar {
+        background-color: $mainColor;
+    }
+    .bui-bar-right {
+        .icon-search {
+            display: inline-block;
+            margin-right: .05rem;
+            margin-top: .12rem;
+            font-size: $font36;
+            color: #fff;
+        }
+    }
+}
+
+
+/*商品列表共用样式*/
+
+.ulList {
+    .bui-fluid-space {
+        margin: 0;
+        li {
+            position:relative;
+            padding: 0;
+            margin-bottom: 6px;
+            .miaosha-tip{
+                position:absolute;
+                top:.05rem;
+                right:.05rem;
+                display:inline-block;
+                padding:.05rem;
+                line-height: 1;
+                color:#fff;
+                font-size:$font20;
+                background-color:$mainColor;
+            }
+            .showL {
+                background: #fff;
+                padding: 15px;
+                .img {
+                    padding: 0;
+                    max-width: 100%;
+                    height: 230px;
+                    text-align: center;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h3 {
+                    color: #000000;
+                    padding: 10px 0;
+                    @extend .textO;
+                }
+                p {
+                    color: $fontGray;
+                    font-size: $font_18;
+                }
+                span {
+                    color: $redColor;
+                    strong {
+                        font-size: $font_14;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .bottomB {
+                border-bottom: 1px solid $borderGray;
+                border-top: 1px solid $borderGray;
+                background: $whiteColor;
+                div {
+                    display: block;
+                    padding: 0;
+                    font-size: $font_18;
+                    text-align: center;
+                    line-height: 45px;
+                    &.save {
+                        color: $fontBlue;
+                    }
+                    &.shop {
+                        background: $redColor;
+                        color: $whiteColor;
+                    }
+                    &.add {
+                        background: #C1C1C1;
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+        li:nth-of-type(odd) {
+            padding-right: 3px;
+        }
+        li:nth-of-type(even) {
+            padding-left: 3px;
+            .bottomB {
+                border-left: 1px solid $borderGray;
+            }
+        }
+    }
+}
+
+
+/*查询无结果共用样式*/
+
+.searchNo {
+    background: url("../images/icon-search-text.png") no-repeat center 83px;
+    background-size: 74px 93px;
+    padding-top: 193px;
+    p {
+        color: $fontGray;
+        text-align: center;
+    }
+}
+
+// 弹出框公用样式
+.bui-dialog-center {
+    border-top: 5px solid $mainColor;
+    .bui-dialog-head {
+        padding-top: .1rem;
+        color: $fontColor;
+        font-size: $font26;
+        .sure-tip {
+            display: none;
+        }
+    }
+    .order-modal-title {
+        .notice-title {
+            display: none;
+        }
+        .sure-tip {
+            display: block;
+        }
+        .sure-icon {
+            margin-right: .2rem;
+            margin-top: .2rem;
+            @include backgroundIcon(icon-current,
+            .8rem,
+            .8rem);
+            background-size: contain;
+        }
+    }
+    .bui-dialog-main {
+        padding: 0rem .5rem .15rem;
+        line-height: 1.6;
+        color: $fontGray;
+        font-size: $font22;
+    }
+    .bui-dialog-foot {
+        .span1:first-child {
+            .bui-btn {
+                border-left: none;
+            }
+        }
+        .sure-btn,
+        .primary-reverse {
+            color: $mainColor;
+        }
+    }
+}

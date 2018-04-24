@@ -1,0 +1,18 @@
+@charset "utf-8";
+.page_mySave{
+	background: #ffffff;
+	.bui-bar{
+		background: $mainColor;
+	}
+	main{
+		ul{
+			li{
+				padding: 18px;
+				.img{
+					width: 115px;
+					height: 115px;
+				}
+			}
+		}
+	}
+}

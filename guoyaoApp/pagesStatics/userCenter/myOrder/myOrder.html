@@ -1,0 +1,268 @@
+<div class="bui-page myOrder-page gray-page" id="myOrderPage">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn btn-back"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">我的订单</div>
+            <div class="bui-bar-right"> <i class="icon-search toLink" href="pages/search/search.html"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="myOrder-page-list">
+            <div id="uiOrderTab" class="bui-tab">
+                <div class="bui-tab-head">
+                    <ul class="bui-nav">
+                        <li class="bui-btn active">
+                            <span class="tab-name">全部订单</span>
+                        </li>
+                        <li class="bui-btn">
+                            <span class="tab-name">待确认</span>
+                        </li>
+                        <li class="bui-btn">
+                            <span class="tab-name">已确认</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bui-tab-main">
+                    <ul>
+                        <li>
+                            <div class="bui-scroll" id="myorderALL">
+                                <div class="bui-scroll-head"></div>
+                                <div class="bui-scroll-main">
+                                    <div class="bui-list">
+                                        <div class="order-item">
+                                            <div class="order-item-code">
+                                                订单标号：
+                                                <span class="code">201823241241</span> <b class="bui-right not-submit">未提交</b>
+                                            </div>
+                                            <div class="bui-box bui-btn product-info">
+                                                <div class="product-img bui-align-center">
+                                                    <img src="images/icon-news4.png" alt=""></div>
+                                                <div class="span1">
+                                                    <h6 class="product-name">维生素AD胶粒</h6>
+                                                    <p class="product-type">商品规格：10（1-5岁）</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-order-info">
+                                                <div class="order-info bui-align-right">
+                                                    <span>共1件商品</span>
+                                                    <span class="price">总额：￥32.00</span>
+                                                </div>
+                                                <div class="myOrder-page-operate bui-align-right">
+                                                    <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    <button type="text" class="bui-btn">取消</button>
+                                                    <button type="text" data-id="1234124221" class="bui-btn sure-btn">确认</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item-code">
+                                                订单标号：
+                                                <span class="code">201823241241</span> <b class="bui-right not-submit">已提交待确认</b>
+                                            </div>
+                                            <div class="bui-box bui-btn product-info">
+                                                <div class="product-img bui-align-center">
+                                                    <img src="images/icon-news4.png" alt=""></div>
+                                                <div class="span1">
+                                                    <h6 class="product-name">维生素AD胶粒</h6>
+                                                    <p class="product-type">商品规格：10（1-5岁）</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-order-info">
+                                                <div class="order-info bui-align-right">
+                                                    <span>共1件商品</span>
+                                                    <span class="price">总额：￥32.00</span>
+                                                </div>
+                                                <div class="myOrder-page-operate bui-align-right">
+                                                    <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    <button type="text" class="bui-btn">取消</button>
+                                                    <button type="text" class="bui-btn sure-btn">确认</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item-code">
+                                                订单标号：
+                                                <span class="code">201823241241</span>
+                                                <b class="bui-right has-submit">已提交待处理</b>
+                                            </div>
+                                            <div class="bui-box bui-btn product-info">
+                                                <div class="product-img bui-align-center">
+                                                    <img src="images/icon-news4.png" alt=""></div>
+                                                <div class="span1">
+                                                    <h6 class="product-name">维生素AD胶粒</h6>
+                                                    <p class="product-type">商品规格：10（1-5岁）</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-order-info">
+                                                <div class="order-info bui-align-right">
+                                                    <span>共1件商品</span>
+                                                    <span class="price">总额：￥32.00</span>
+                                                </div>
+                                                <div class="myOrder-page-operate bui-align-right">
+                                                    <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="bui-scroll-foot"></div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="bui-scroll" id="myorderWait">
+                                <div class="bui-scroll-head"></div>
+                                <div class="bui-scroll-main">
+                                    <div class="bui-list">
+                                        <div class="order-item">
+                                            <div class="order-item-code">
+                                                订单标号：
+                                                <span class="code">201823241241</span>
+                                                <b class="bui-right not-submit">已提交待确认</b>
+                                            </div>
+                                            <div class="bui-box bui-btn product-info">
+                                                <div class="product-img bui-align-center">
+                                                    <img src="images/icon-news4.png" alt=""></div>
+                                                <div class="span1">
+                                                    <h6 class="product-name">维生素AD胶粒</h6>
+                                                    <p class="product-type">商品规格：10（1-5岁）</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-order-info">
+                                                <div class="order-info bui-align-right">
+                                                    <span>共1件商品</span>
+                                                    <span class="price">总额：￥32.00</span>
+                                                </div>
+                                                <div class="myOrder-page-operate bui-align-right">
+                                                    <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    <button type="text" class="bui-btn">取消</button>
+                                                    <button type="text" class="bui-btn sure-btn">确认</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item-code">
+                                                订单标号：
+                                                <span class="code">201823241241</span>
+                                                <b class="bui-right not-submit">已提交待确认</b>
+                                            </div>
+                                            <div class="bui-box bui-btn product-info">
+                                                <div class="product-img bui-align-center">
+                                                    <img src="images/icon-news4.png" alt=""></div>
+                                                <div class="span1">
+                                                    <h6 class="product-name">维生素AD胶粒</h6>
+                                                    <p class="product-type">商品规格：10（1-5岁）</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-order-info">
+                                                <div class="order-info bui-align-right">
+                                                    <span>共1件商品</span>
+                                                    <span class="price">总额：￥32.00</span>
+                                                </div>
+                                                <div class="myOrder-page-operate bui-align-right">
+                                                    <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    <button type="text" class="bui-btn">取消</button>
+                                                    <button type="text" class="bui-btn sure-btn">确认</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bui-scroll-foot"></div>
+
+                            </li>
+                            <li>
+                                <div class="bui-scroll" id="myorderHas">
+                                    <div class="bui-scroll-head"></div>
+                                    <div class="bui-scroll-main">
+                                        <div class="bui-list">
+                                            <div class="order-item">
+                                                <div class="order-item-code">
+                                                    订单标号：
+                                                    <span class="code">201823241241</span>
+                                                    <b class="bui-right has-submit">已提交待处理</b>
+                                                </div>
+                                                <div class="bui-box bui-btn product-info">
+                                                    <div class="product-img bui-align-center">
+                                                        <img src="images/icon-news4.png" alt=""></div>
+                                                    <div class="span1">
+                                                        <h6 class="product-name">维生素AD胶粒</h6>
+                                                        <p class="product-type">商品规格：10（1-5岁）</p>
+                                                    </div>
+                                                </div>
+                                                <div class="wrap-order-info">
+                                                    <div class="order-info bui-align-right">
+                                                        <span>共1件商品</span>
+                                                        <span class="price">总额：￥32.00</span>
+                                                    </div>
+                                                    <div class="myOrder-page-operate bui-align-right">
+                                                        <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-item-code">
+                                                    订单标号：
+                                                    <span class="code">201823241241</span>
+                                                    <b class="bui-right has-submit">已提交待处理</b>
+                                                </div>
+                                                <div class="bui-box bui-btn product-info">
+                                                    <div class="product-img bui-align-center">
+                                                        <img src="images/icon-news4.png" alt=""></div>
+                                                    <div class="span1">
+                                                        <h6 class="product-name">维生素AD胶粒</h6>
+                                                        <p class="product-type">商品规格：10（1-5岁）</p>
+                                                    </div>
+                                                </div>
+                                                <div class="wrap-order-info">
+                                                    <div class="order-info bui-align-right">
+                                                        <span>共1件商品</span>
+                                                        <span class="price">总额：￥32.00</span>
+                                                    </div>
+                                                    <div class="myOrder-page-operate bui-align-right">
+                                                        <button type="text" href="pages/userCenter/myOrder/myOrderDetails.html" class="bui-btn btn">详情</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bui-scroll-foot"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div id="orderDialog" class="bui-dialog order-modal" style="display:none;">
+                <div class="bui-dialog-head bui-align-center">
+                    <!--order-modal-title-->
+                    <span class="notice-title">确认订单</span>
+                    <div class="sure-tip bui-box-center">
+                        <i class="sure-icon"></i>
+                        <span>确认订单成功</span>
+                    </div>
+                </div>
+                <div class="bui-dialog-main">是否确认2018010510122021采购订单?</div>
+                <div class="bui-dialog-foot">
+                    <div class="bui-box">
+                        <div class="span1 cancel-btn">
+                            <div class="bui-btn">取消</div>
+                        </div>
+                        <div class="span1">
+                            <div class="bui-btn sure-btn" data-clickNum="0">确定</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

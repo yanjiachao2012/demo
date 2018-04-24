@@ -1,0 +1,65 @@
+@charset "utf-8";
+.page_certificatesMessage{
+	.bui-bar{
+		background: $mainColor;
+	}
+	main{
+		background: $whiteColor;
+		ul{
+			background: #F7F8F9;
+			padding-bottom: 15px;
+			li{
+				margin-bottom: 15px;
+				background: #ffffff;
+				.titleB{
+					padding: 18px;
+					border-bottom: 1px solid $borderGray;
+					.span1{
+						color: $fontBlack;
+					}
+					span{
+						color: $mainColor;
+						&.over{
+							color: $redColor;
+						}
+					}
+				}
+				.numC{
+					padding: 0 14px;
+					dd{
+						padding: 18px 0;
+						border-bottom: 1px solid $borderGray;
+						span{
+							color: $fontGray;
+							font-size: $font_20;
+							padding-right: 14px;
+						}
+						.span1{
+							color: $fontBlack;
+						}
+					}
+					dd:last-child{
+						border-bottom: none;
+					}
+				}
+			}
+			li:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.footerBtn{
+		padding:18px;
+		.btnA{
+			background: $redColor;
+			color: #ffffff;
+			padding:15px;
+			text-align: center;
+			font-size: $font_20;
+			border-radius: 5px;
+			.icon-plus{
+				margin-right: 10px;
+			}
+		}
+	}
+}

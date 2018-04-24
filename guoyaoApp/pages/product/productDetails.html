@@ -1,0 +1,157 @@
+<div class="bui-page pdetails-page white-page">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn toback"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">商品详情</div>
+            <div class="bui-bar-right"></div>
+        </div>
+    </header>
+    <main>
+        <div class="pdetails-page-content">
+            <div id="productSlide" class="bui-slide container-y">
+                <div class="bui-slide-main bui-align-center">
+                    <ul>
+                        <!-- <li>
+                        <img src="images/pic.jpg" alt=""></li>
+                    <li>
+                        <img src="images/pic.jpg" alt=""></li>
+                    <li>
+                        <img src="images/pic.jpg" alt=""></li>
+                    -->
+                </ul>
+            </div>
+            <div class="slide-index white-font">
+                <span class="number">1</span>
+                <span>/</span>
+                <span class="number">5</span>
+            </div>
+        </div>
+        <div class="border-line"></div>
+
+        <div class="short-details container-xy">
+            <h2 class="title">维生素AD滴剂(胶囊型)</h2>
+            <p class="info">10S(A1500单位/D3 500单位,一次性包装)*3板(0-1岁)</p>
+            <div class="price">
+                ￥
+                <span class="p-int"></span>
+                <span class="old-price">￥30</span>
+            </div>
+        </div>
+        <dl class="sale-details" id="accordionSale">
+            <dt class="wrap-title"> <strong class="title">促销</strong>
+                <span class="sale-tip">可以享受一下促销</span> <i class="bui-right icon icon-listdown"></i>
+            </dt>
+            <dd>
+                <div class="sale-item bui-box">
+                    <span class="mark">限购</span>
+                    <div class="span1">购买1-5件时享受单件价￥24，超出数量以结算价为准</div>
+                </div>
+                <div class="sale-item bui-box">
+                    <span class="mark">满送</span>
+                    <div class="span1">
+                        满119元，可减10元，
+                        <span class="toLink">详情 <i class="icon-right"></i></span>
+                    </div>
+                </div>
+                <div class="sale-item bui-box">
+                    <span class="mark">满送</span>
+                    <div class="span1">
+                        满119元，可减10元，
+                        <span class="toLink" href="pages/product/productDetails.html">详情 <i class="icon-right"></i></span>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <div class="bui-box-center long-details container-x">
+            <div class="span1 mark bui-align-left">详细信息</div>
+            <div class="span1 bui-align-right">
+                <span class="online">
+                    <i class="online-icon"></i>
+                    联系客服
+                </span>
+            </div>
+        </div>
+        <div class="container-xy">
+            <div class="details-list">
+                <div class="bui-box bui-btn" id="goodsCode">
+                    <div class="span1 item-left">商品编码</div>
+                    <div class="span3 item-right"></div>
+                </div>
+                <div class="bui-box bui-btn" id="goodsName">
+                    <div class="span1 item-left">商品名称</div>
+                    <div class="span3 item-right"></div>
+                </div>
+                <div class="bui-box bui-btn" id="goodsProducer">
+                    <div class="span1 item-left">生产厂家</div>
+                    <div class="span3 item-right"></div>
+                </div>
+                <div class="bui-box bui-btn" id="goodsSpec">
+                    <div class="span1 item-left">商品规格</div>
+                    <div class="span3 item-right"></div>
+                </div>
+                <div class="bui-box bui-btn" id="goodsMsunitno">
+                    <div class="span1 item-left">包装单位</div>
+                    <div class="span3 item-right"></div>
+                </div>
+                <div class="bui-box bui-btn" id="goodsPackNum">
+                    <div class="span1 item-left">包装数量</div>
+                    <div class="span3 item-right"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer class="pdetails-footer">
+    <div class="bui-box-center pdetails-operate">
+        <div class="span1 bui-align-center ">
+            <i class="collect-icon"></i>
+            <div class="collect-tip">收藏</div>
+        </div>
+        <div class="span2 bui-btn no-border white-font join-cart" id="join-cart">加入购物车</div>
+        <div class="span2 bui-btn no-border white-font now-buy" id="nowBuy">立即购买</div>
+        <!--href="pages/userCenter/myOrder/myOrderSure.html"--> </div>
+</footer>
+<div id="cartDialog" class="bui-dialog" style="display:none;">
+    <div class="bui-dialog-head">
+        <div class="bui-box">
+            <div class="select-pic bui-align-center">
+                <img class="pic" src="images/pic.jpg"/>
+            </div>
+            <div class="span1 container-y">
+                <h3 class="select-title">维生素AD滴剂(胶囊型)</h3>
+                <div class="select-price">
+                    ￥
+                    <span class="total-price"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bui-dialog-main">
+        <div class="bui-box-center wrap-select container-xy">
+            <span class="number-mark">数量</span>
+            <div class="span1 bui-align-right">
+                <div class="select-number">
+                    <!-- <em class="icon-minus btn"></em>
+                -->
+                <!-- <input id="productNumber" type="number" class="bui-number" />
+                -->
+                <div id="productNumber" class="bui-number"></div>
+                <!-- <em class="icon-plus btn"></em>
+            -->
+        </div>
+    </div>
+</div>
+</div>
+<div class="bui-dialog-foot">
+<div class="bui-btn sure-btn white-font">确 定</div>
+</div>
+<div class="bui-dialog-close">
+<i class="icon-close"></i>
+</div>
+</div>
+
+</div>

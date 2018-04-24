@@ -1,0 +1,60 @@
+.help-page{
+	.title-mark{
+    	position:relative;
+    	padding: 0.2rem 0 0 0;
+  	}
+  	.mark-title{
+  		color:$mainColor;
+  		font-size: $font24;
+  	}
+  	.mark-bg{
+  		@include backgroundIcon(icon-line,.6rem, .3rem);
+  		background-size:.36rem .24rem;
+  		vertical-align: middle;
+  	}
+	.tab{
+		position: relative;
+		overflow: hidden; 
+		background: #F6F8F7;
+		.tabH{
+			padding:0rem 0.17rem 0 0.17rem;
+			border-bottom: 1px solid #E5E5E5;
+			background: #fff;
+			.bui-nav{
+				overflow:hidden;
+				overflow-x:auto;
+				.bui-btn{
+					color: #444444;
+					font-size: 0.22rem;
+					border:none;
+					padding: 0.18rem .1rem .15rem;
+					border-bottom: 0.03rem solid transparent;
+					min-width: 1.1rem;
+				}
+				.active{
+					border-bottom: 0.03rem solid #30C5C3;
+					color: #30C5C3;
+				}
+			}
+			.btn-dropdown{
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding: 0;
+				min-height: auto;
+				border:none;
+				padding-left: 0.23rem;
+				background:rgba(255,255,255,0.9);
+				width: 0.6rem;
+				height: 0.6rem;
+			}
+		}
+		.listM{
+			padding:0.2rem;
+			img{
+				width: 100%;
+				margin-top: 0.6rem;
+			}
+		}
+	}
+}

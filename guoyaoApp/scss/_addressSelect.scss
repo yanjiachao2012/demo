@@ -1,0 +1,54 @@
+.addressSelect-page{
+	.select-item{
+		position: relative;
+		height:1.5rem;
+		overflow:hidden;
+		margin-bottom:.2rem;
+		border:2px solid transparent;
+		background-color:#fff;
+		.info-title{
+			font-size:.22rem;
+			color:#333;
+			margin-bottom:.1rem;
+		}
+		.defalut-mark{
+			position:absolute;
+			right:0;
+			top:0;
+			padding:.02rem .05rem;
+			color:#fff;
+			font-size:.18rem;
+			background-color:rgba(0,0,0,.4);
+		}
+		.item-detail{
+			color:#999;
+		}
+		.name{
+    	margin-right:.2rem;
+    }
+	}
+	.default-item{
+    border-color: #11B8AB;
+    .tip{
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    border: .18rem solid transparent;
+	    border-right-color: #11B8AB;
+	    border-bottom-color: #11B8AB;
+    }
+    &:after{
+    	content: '';
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 2;
+	    width: .3rem;
+	    height: .3rem;
+	    background-image: url(../images/icon-selected.png);
+	    background-position: right bottom;
+	    background-repeat: no-repeat;
+	    background-size: .24rem .24rem;
+    }
+	}
+}

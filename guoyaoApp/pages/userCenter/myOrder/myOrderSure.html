@@ -1,0 +1,270 @@
+<div class="bui-page myOrder-page gray-page">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn btn-back"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">确认订单</div>
+            <div class="bui-bar-right"></div>
+        </div>
+    </header>
+    <main>
+        <div class="myOrder-page-details myOrder-page-sure" id="myorderPageSure">
+          
+        </div>
+    </main>
+    <footer class="myOrderSure-footer">
+        <div class="bui-align-right bui-box">
+            <div class="span1">
+                <span class="show-order-price">
+                    实付款：
+                    <b id="orderSureTotal">￥</b>
+                </span>
+                <div class="order-price-info"><span>总额：￥111.00</span>&nbsp;&nbsp;<span>立减：￥30.00</span></div>
+            </div>
+            
+            <button type="submit" id="orderSureSubmit" class="submit-order no-border">提交订单</button>
+        </div>
+    </footer>
+</div>
+<script id="t:_myordersure-1" type="text/html">
+<div class="bui-btn bui-box bui-align-left no-border user-info">
+        <div class="span1">
+            <h3 class="user">
+                <%= name%>
+                <span class="phone"><%= phone.slice(0,3)%>***<%= phone.slice(-4)%></span>
+                <i class="default-address">默认</i>
+            </h3>
+            <p class="address"><%= address%></p>
+        </div> <i class="icon-listright"></i>
+    </div>
+    <div class="order-item">
+        <div class="order-mark bui-box">
+            <div class="span2">
+                <span class="order-mark-tip">满减</span>
+                <b class="order-mark-content">购满199.00，可减30</b>
+            </div>
+            <div class="span1 bui-align-right mark-info">
+                已减￥30,00
+            </div>
+        </div>
+        <%for(var i=0;i<orderList.length;i++){%>
+            <div class="order-item-row">
+                <div class="bui-box-top bui-btn product-info">
+                    <div class="details-img bui-align-center">
+                        <img src="<%:v=orderList[i].GOODSID%>"   alt=""/></div>
+                    <div class="span1 bui-align-left">
+                        <h6 class="product-name"><%= orderList[i].GNAME %></h6>
+                        <p class="product-type">商品规格：<%= orderList[i].APEC %></p>
+                        <p class="product-type">生产产家：<%= orderList[i].PRODUCER %></p>
+                        <div class="product-price">
+                            <span class="price redColor">￥<%= orderList[i].PRICE%></span>
+                            <span class="bui-right order-number">1盒x<%= orderList[i].qutity%></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-order-info">
+                    <div class="bui-box bui-btn show-info no-border clearactive">
+                        <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                        <div class="span1">
+                            <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+                        </div>
+                    </div>
+                    <div class="order-info bui-align-right">
+                        <span>共<%= orderList[i].qutity%>件商品</span>
+                        <span class="price">
+                            小计： <b class="redColor">￥<%= orderList[i].qutity*orderList[i].PRICE%></b>
+                        </span>
+                    </div>
+                </div>
+
+            </div>  
+        <%}%>
+    </div>
+    <div class="order-item">
+        <div class="order-mark bui-box">
+            <div class="span2">
+                <span class="order-mark-tip">满赠</span>
+                <b class="order-mark-content">购满199.00，可减30</b>
+            </div>
+        </div>
+        <%for(var i=0;i<orderList.length;i++){%>
+            <div class="order-item-row">
+                <div class="bui-box-top bui-btn product-info">
+                    <div class="details-img bui-align-center">
+                        <img src="<%:v=orderList[i].GOODSID%>"   alt=""/></div>
+                    <div class="span1 bui-align-left">
+                        <h6 class="product-name"><%= orderList[i].GNAME %></h6>
+                        <p class="product-type">商品规格：<%= orderList[i].APEC %></p>
+                        <p class="product-type">生产产家：<%= orderList[i].PRODUCER %></p>
+                        <div class="product-price">
+                            <span class="price redColor">￥<%= orderList[i].PRICE%></span>
+                            <span class="bui-right order-number">1盒x<%= orderList[i].qutity%></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-order-info">
+                    <div class="bui-box bui-btn show-info no-border clearactive">
+                        <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                        <div class="span1">
+                            <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+                        </div>
+                    </div>
+                    <div class="order-info bui-align-right">
+                        <span>共<%= orderList[i].qutity%>件商品</span>
+                        <span class="price">
+                            小计： <b class="redColor">￥<%= orderList[i].qutity*orderList[i].PRICE%></b>
+                        </span>
+                    </div>
+                    <div class="bui-box container-y giveaway-tip">
+                        <div class="bui-label">赠&nbsp;&nbsp;品</div>
+                        <div class="span1">金龙鱼葵花籽调和油</div>
+                        <span class="giveaway-number">1桶 x 1</span>
+                    </div>
+                </div>
+
+            </div>  
+        <%}%>
+    </div>
+    <!-- <div class="order-item">
+        <div class="order-mark bui-box">
+            <div class="span2">
+                <span class="order-mark-tip">满减</span>
+                <b class="order-mark-content">购满199.00，可减30</b>
+            </div>
+            <div class="span1 bui-align-right mark-info">
+                已减￥30,00
+            </div>
+        </div>
+        <div class="order-item-row">
+            <div class="bui-box-top bui-btn product-info">
+                <div class="details-img bui-align-center">
+                    <img src="images/icon-news4.png" alt=""></div>
+                <div class="span1 bui-align-left">
+                    <h6 class="product-name">维生素AD胶粒</h6>
+                    <p class="product-type">商品规格：10（1-5岁）</p>
+                    <p class="product-type">生产产家：山东达因海洋生物制药股份有限公司</p>
+                    <div class="product-price">
+                        <span class="price redColor">￥24.00</span>
+                        <span class="bui-right order-number">1盒x4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-order-info">
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                    <div class="span1">
+                        <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+                    </div>
+                </div>
+                <div class="order-info bui-align-right">
+                    <span>共1件商品</span>
+                    <span class="price">
+                        小计： <b class="redColor">￥32.00</b>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="order-item-row">
+            <div class="bui-box-top bui-btn product-info">
+                <div class="details-img bui-align-center">
+                    <img src="images/icon-news4.png" alt=""></div>
+                <div class="span1 bui-align-left">
+                    <h6 class="product-name">维生素AD胶粒</h6>
+                    <p class="product-type">商品规格：10（1-5岁）</p>
+                    <p class="product-type">生产产家：山东达因海洋生物制药股份有限公司</p>
+                    <div class="product-price">
+                        <span class="price redColor">￥24.00</span>
+                        <span class="bui-right order-number">1盒x4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-order-info">
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                    <div class="span1">
+                        <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+                    </div>
+                </div>
+                <div class="order-info bui-align-right">
+                    <span>共1件商品</span>
+                    <span class="price">
+                        小计： <b class="redColor">￥32.00</b>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>  -->
+    <!-- <div class="order-item">
+        <div class="order-mark bui-box">
+            <div class="span2">
+                <span class="order-mark-tip">满赠</span>
+                <b class="order-mark-content">购满199.00，可减30</b>
+            </div>
+        </div>
+        <div class="order-item-row">
+            <div class="bui-box-top bui-btn product-info">
+                <div class="details-img bui-align-center">
+                    <img src="images/icon-news4.png" alt=""></div>
+                <div class="span1 bui-align-left">
+                    <h6 class="product-name">维生素AD胶粒</h6>
+                    <p class="product-type">商品规格：10（1-5岁）</p>
+                    <p class="product-type">生产产家：山东达因海洋生物制药股份有限公司</p>
+                    <div class="product-price">
+                        <span class="price redColor">￥24.00</span>
+                        <span class="bui-right order-number">1盒x4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-order-info">
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                    <div class="span1">
+                        <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+                    </div>
+                </div>
+                <div class="order-info bui-align-right">
+                    <span>共1件商品</span>
+                    <span class="price">
+                        小计： <b class="redColor">￥32.00</b>
+                    </span>
+                </div>
+                <div class="bui-box container-y giveaway-tip">
+                    <div class="bui-label">赠&nbsp;&nbsp;品</div>
+                    <div class="span1">金龙鱼葵花籽调和油</div>
+                    <span class="giveaway-number">1桶 x 1</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>  -->
+    <div class="margin-top container-xy white-bg pay-part">
+        <h6 class="pay-mark">支付方式</h6>
+        <div class="pay-types">
+            <div class="bui-check">
+                <input id="onlinePay" checked type="radio" name="pay">
+                <label for="onlinePay" class="label">在线支付<b class="tip"></b></label>
+            </div>
+            <div class="bui-check">
+                <input id="outlinePay" type="radio" name="pay">
+                <label for="outlinePay" class="label">线下支付<b class="tip"></b></label>
+            </div>
+        </div>
+    </div>
+    <div class="margin-top show-infos white-bg">
+        <div class="bui-box bui-btn show-info no-border">
+            <h5 class="text-name">发票抬头</h5>
+        </div>
+        <div class="bui-box bui-btn show-info no-border">
+            <h5 class="text-name"><%= INVOICENOName%></h5>
+        </div>
+        <div class="bui-box bui-btn show-info no-border">
+            <div class="bui-label">采购备注</div>
+            <div class="span1">
+                <input class="bui-input" placeholder="请输入备注信息" type="text"/>
+            </div>
+        </div>
+    </div>
+</script>

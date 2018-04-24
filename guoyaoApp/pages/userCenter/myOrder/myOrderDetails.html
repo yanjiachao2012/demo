@@ -1,0 +1,228 @@
+<div class="bui-page myOrder-page gray-page" id="myOrderDetailsPage">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn" id="toBackOrder"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">订单详情</div>
+            <div class="bui-bar-right"></div>
+        </div>
+    </header>
+    <main>
+        <div class="myOrder-page-details" id="myOrderDetails">
+        </div> 
+    </main>
+    <footer class="myOrder-page-footer container-xy">
+        <div class="myOrder-page-operate bui-align-right">
+            <button type="text" class="bui-btn buyAgain">整单再次购买</button>
+            <button type="text" class="bui-btn sure-btn" id="myorderSure">确认</button>
+        </div>
+    </footer>
+</div>
+<script id="t:_myorder-1" type="text/html"><!--<%=  %> -->
+     <div class="myOrder-page-details">
+            <div class="bui-btn bui-align-left no-border user-info">
+                <h3 class="user"><%= name %><span class="phone"><%= phone.slice(0,3)%>***<%= phone.slice(-4)%></span></h3>
+                <p class="address"><%= address %></p>
+            </div>
+            <div class="bui-box bui-btn margin-top show-info no-border order-status">
+                <div class="bui-label">订单状态</div>
+                <%if(orderStatus==0){%>
+                    <div class="span1">已提交待确认</div>
+                <%}else if(orderStatus==1){%>
+                    <div class="span1">已发货</div>
+                <%}else{%>
+                    <div class="span1">待确认</div>
+                <%}%>
+                
+            </div>
+            <div class="order-item">
+                <div class="order-mark bui-box">
+                    <div class="span2">
+                        <span class="order-mark-tip">满减</span>
+                        <b class="order-mark-content">购满199.00，可减30</b>
+                    </div>
+                    <div class="span1 bui-align-right mark-info">
+                        已减￥30,00
+                    </div>
+                </div>
+                <div class="order-item-row">
+                    <div class="order-item-code">
+                    订单标号：
+                        <span class="code"><%= PURCHASE_DETAIL_ID %></span> <b class="bui-right online-tip"><i class="online-icon"></i>
+                            联系客服</b> 
+                    </div>
+                    <div class="bui-box-top bui-btn product-info">
+                        <div class="details-img bui-align-center">
+                            <img src="<%:v=GOODSID%>"   alt=""/></div>
+                        <div class="span1 bui-align-left">
+                            <h6 class="product-name"><%= GNAME %></h6>
+                            <p class="product-type">商品规格：<%= APEC %></p>
+                            <p class="product-type">生产产家：<%= PRODUCER %></p>
+                            <div class="product-price">
+                                <span class="price redColor">￥<%= PRICE %></span>
+                                <span class="bui-right order-number">1盒x<%= qutity %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-order-info">
+                        <div class="bui-box bui-btn container-y show-info no-border">
+                            <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                            <div class="span1"><%= remark %></div>
+                        </div>
+                        <div class="order-info bui-align-right">
+                            <span>共1件商品</span>
+                            <span class="price">
+                                总额： <b class="redColor">￥<%= totalPrice %></b>
+                            </span>
+                        </div>
+                        <div class="myOrder-page-operate bui-align-right">
+                            <button type="text" class="bui-btn buyAgain">再次购买</button>
+                            <button type="text" class="bui-btn remove-btn">作废</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item-row">
+                    <div class="order-item-code">
+                    订单标号：
+                        <span class="code"><%= PURCHASE_DETAIL_ID %></span> <b class="bui-right online-tip"><i class="online-icon"></i>
+                            联系客服</b> 
+                    </div>
+                    <div class="bui-box-top bui-btn product-info">
+                        <div class="details-img bui-align-center">
+                            <img src="<%:v=GOODSID%>"   alt=""/></div>
+                        <div class="span1 bui-align-left">
+                            <h6 class="product-name"><%= GNAME %></h6>
+                            <p class="product-type">商品规格：<%= APEC %></p>
+                            <p class="product-type">生产产家：<%= PRODUCER %></p>
+                            <div class="product-price">
+                                <span class="price redColor">￥<%= PRICE %></span>
+                                <span class="bui-right order-number">1盒x<%= qutity %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-order-info">
+                        <div class="bui-box bui-btn container-y show-info no-border">
+                            <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                            <div class="span1"><%= remark %></div>
+                        </div>
+                        <div class="order-info bui-align-right">
+                            <span>共1件商品</span>
+                            <span class="price">
+                                总额： <b class="redColor">￥<%= totalPrice %></b>
+                            </span>
+                        </div>
+                        <div class="myOrder-page-operate bui-align-right">
+                            <button type="text" class="bui-btn buyAgain">再次购买</button>
+                            <button type="text" class="bui-btn remove-btn">作废</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-mark bui-box">
+                    <div class="span2">
+                        <span class="order-mark-tip">满赠</span>
+                        <b class="order-mark-content">购满199.00，可减30</b>
+                    </div>
+                </div>
+                <div class="order-item-row">
+                    <div class="order-item-code">
+                    订单标号：
+                        <span class="code"><%= PURCHASE_DETAIL_ID %></span> <b class="bui-right online-tip"><i class="online-icon"></i>
+                            联系客服</b> 
+                    </div>
+                    <div class="bui-box-top bui-btn product-info">
+                        <div class="details-img bui-align-center">
+                            <img src="<%:v=GOODSID%>"   alt=""/></div>
+                        <div class="span1 bui-align-left">
+                            <h6 class="product-name"><%= GNAME %></h6>
+                            <p class="product-type">商品规格：<%= APEC %></p>
+                            <p class="product-type">生产产家：<%= PRODUCER %></p>
+                            <div class="product-price">
+                                <span class="price redColor">￥<%= PRICE %></span>
+                                <span class="bui-right order-number">1盒x<%= qutity %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-order-info">
+                        <div class="bui-box bui-btn container-y show-info no-border">
+                            <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                            <div class="span1"><%= remark %></div>
+                        </div>
+                        <div class="order-info bui-align-right">
+                            <span>共1件商品</span>
+                            <span class="price">
+                                总额： <b class="redColor">￥<%= totalPrice %></b>
+                            </span>
+                        </div>
+                        <div class="bui-box container-xy giveaway-tip">
+                            <div class="bui-label">赠&nbsp;&nbsp;品</div>
+                            <div class="span1">金龙鱼葵花籽调和油</div>
+                            <span class="giveaway-number">1桶 x 1</span>
+                        </div>
+                        <div class="myOrder-page-operate bui-align-right">
+                            <button type="text" class="bui-btn buyAgain">再次购买</button>
+                            <button type="text" class="bui-btn remove-btn">作废</button>
+                        </div>
+                    </div>
+                </div>
+                  <div class="order-item-code">
+                    订单标号：
+                        <span class="code"><%= PURCHASE_DETAIL_ID %></span> <b class="bui-right online-tip"><i class="online-icon"></i>
+                            联系客服</b> 
+                    </div>
+                    <div class="bui-box-top bui-btn product-info">
+                        <div class="details-img bui-align-center">
+                            <img src="<%:v=GOODSID%>"   alt=""/></div>
+                        <div class="span1 bui-align-left">
+                            <h6 class="product-name"><%= GNAME %></h6>
+                            <p class="product-type">商品规格：<%= APEC %></p>
+                            <p class="product-type">生产产家：<%= PRODUCER %></p>
+                            <div class="product-price">
+                                <span class="price redColor">￥<%= PRICE %></span>
+                                <span class="bui-right order-number">1盒x<%= qutity %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-order-info">
+                        <div class="bui-box bui-btn container-y show-info no-border">
+                            <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                            <div class="span1"><%= remark %></div>
+                        </div>
+                        <div class="order-info bui-align-right">
+                            <span>共1件商品</span>
+                            <span class="price">
+                                总额： <b class="redColor">￥<%= totalPrice %></b>
+                            </span>
+                        </div>
+                        <div class="bui-box container-xy giveaway-tip">
+                            <div class="bui-label">赠&nbsp;&nbsp;品</div>
+                            <div class="span1">金龙鱼葵花籽调和油</div>
+                            <span class="giveaway-number">1桶 x 1</span>
+                        </div>
+                        <div class="myOrder-page-operate bui-align-right">
+                            <button type="text" class="bui-btn buyAgain">再次购买</button>
+                            <button type="text" class="bui-btn remove-btn">作废</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="margin-top show-infos white-bg">
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">下单时间</div>
+                    <div class="span1"><%=  orderTime %></div>
+                </div>
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">支付方式</div>
+                    <div class="span1"><%= payType %></div>
+                </div>
+                <div class="bui-box bui-btn show-info no-border">
+                    <div class="bui-label">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</div>
+                    <div class="span1"><%= REMAR%></div>
+                </div>
+            </div>
+        </div>
+</script>

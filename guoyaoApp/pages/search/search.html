@@ -1,0 +1,46 @@
+<div class="bui-page page_search">
+    <!-- 头部搜索模块 -->
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <div class="bui-btn btn-back"> <i class="icon-back"></i>
+            </div>
+        </div>
+        <div class="bui-bar-main bui-box search-input"> <i class="icon_search"></i>
+            <input type="text" class="span1" id="searchInput" placeholder="请输入搜索内容">
+            <i class="icon-remove icon_remove"></i>
+        </div>
+        <div class="bui-bar-right">
+            <div class="bui-btn" id="searchBtn">搜索</div>
+        </div>
+    </header>
+    <!-- 主体内容：搜索历史显示模块，正在搜索显示模块 -->
+    <main class="listM" id="searchHistory">
+        <div class="listCon">
+            <div class="bui-box title" id="historyBox">
+                <span class="span1">搜索历史</span>
+                <i class="icon_delete" id="removeBtn"></i>
+            </div>
+            <ul class="bui-list"></ul>
+        </div>
+    </main>
+    <!-- 主体内容：搜索有结果时显示商品列表模块 -->
+    <main style="display:none;" id="searchList">
+        <div class="bui-box-center search-result">
+            <div class="span1 active-item" data-type="1">可购商品</div>
+            <div class="span1" data-type="2">全部商品</div>
+        </div>
+        <div class="bui-scroll" id="searchScroll">
+            <div class="bui-scroll-head"></div>
+            <div class="bui-scroll-main ulList">
+                <ul class="bui-fluid-space bui-list"></ul>
+            </div>
+            <div class="bui-scroll-foot"></div>
+        </div>
+    </main>
+    <!-- 主体内容：搜索无结果时显示模块 -->
+    <main style="display:none;" id="searchNo">
+        <div class="searchNo">
+            <p>抱歉，没有搜到相关记录~</p>
+        </div>
+    </main>
+</div>
