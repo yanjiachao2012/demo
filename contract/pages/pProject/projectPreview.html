@@ -1,0 +1,375 @@
+<!-- 这里还是一个标准的BUI页面 -->
+<div class="bui-page contract-page projectPreview-page white-page">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn btn-back"> 
+                    <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">项目审批</div>
+            <div class="bui-bar-right">
+				<span class="bui-btn">审批</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="uiContractTab" class="bui-tab contract-page-tab">
+            <div class="bui-tab-head common-tab">
+                <ul class="bui-nav">
+                    <li class="bui-btn active">
+                        <span class="tab-name">项目立项表</span>
+                    </li>
+                    <li class="bui-btn">
+                        <span class="tab-name">项目预算</span>
+                    </li>
+                    <li class="bui-btn">
+                        <span class="tab-name">项目利润</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bui-tab-main">
+                <ul>
+                    <!-- 项目立项表模块 -->
+                    <li>
+                        <div class="bui-scroll" id="contractWait">
+                            <div class="bui-scroll-head"></div>
+                            <div class="bui-scroll-main">
+                                <div class="mainL">
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">项目名称</div>
+                                            <div class="span1">
+                                              <div class="bui-value">
+												  <span id="sTp101">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">所属部门</div>
+                                            <div class="span1">
+												<div class="bui-value">
+													<span id="sTp102">-</span>
+												</div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">项目经理</div>
+                                            <div class="span1">
+                                              <div class="bui-value">
+												  <span id="sTp103">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">部门最低利润率</div>
+                                            <div class="span1">
+                                              <div class="bui-value textR">
+												  <span id="sTp104">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">项目订单毛利</div>
+                                            <div class="span1">
+                                              <div class="bui-value textR">
+												  <span id="sTp105">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">考核工作量</div>
+                                            <div class="span1">
+                                              <div class="bui-value textR">
+												  <span id="sTp106">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box clearactive">
+                                            <div class="bui-label say">
+                                                <label for="item7"><span>项目说明</span></label>
+                                            </div>
+											<div class="span1">
+												<span id="sTp107">-</span>
+												<!--<textarea name="" class="bui-input" id="item7" cols="30" rows="4" placeholder="项目说明"></textarea>-->
+											</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">合同编号</div>
+                                            <div class="span1">
+                                              <div class="bui-value">
+												  <span id="sTp108">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">合同名称</div>
+                                            <div class="span1">
+                                              <div class="bui-value">
+												  <span id="sTp109">-</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">销售人员</div>
+                                            <div class="span1">
+                                                <div class="bui-value">
+													<span id="sTp110">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box">
+                                            <div class="bui-label">合同状态</div>
+                                            <div class="span1">
+                                                <div class="bui-value">
+													<span id="sTp111">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bui-scroll-foot"></div>
+                        </div>
+                    </li>
+                    <!-- 项目预算模块 -->
+                    <li>
+                        <div class="bui-scroll" id="contractDoing">
+                            <div class="bui-scroll-head"></div>
+                            <div class="bui-scroll-main">
+                                <div class="mainL">
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box clearactive">
+                                            <div class="bui-label">
+                                                <label for="item21">
+                                                    <i class="icon_pre"></i>
+                                                    <span>人工成本预算</span>
+                                                </label>
+                                            </div>
+                                            <div class="span1">
+												<div class="bui-select textR"><span id="sTp201">-</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box clearactive">
+                                            <div class="bui-label">
+                                                <label for="item22">
+                                                    <span>计划投入</span>
+                                                </label>
+                                            </div>
+                                            <div class="span1">
+												<div class="bui-select textR"><span id="sTp202">-</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bui-btn bui-box AGoPage" href="pages/pProject/unsurePreview.html">
+                                            <div class="bui-label">未确定人员人工成本预算</div>
+                                            <div class="span1">
+                                                <div class="bui-select textR"><span id="sTp203">-</span></div>
+                                            </div>
+                                            <i class="icon-listright"></i>
+                                        </div>
+                                        <div class="bui-btn bui-box AGoPage" href="pages/pProject/KnownPreview.html">
+                                            <div class="bui-label">已知人员人工成本预算</div>
+                                            <div class="span1">
+                                                <div class="bui-select textR"><span id="sTp204">-</span></div>
+                                            </div>
+                                            <i class="icon-listright"></i>
+                                        </div>
+                                        <div class="bui-btn bui-box clearactive">
+                                            <div class="bui-label">
+                                                <label for="item23">
+                                                    <span>实际已发生人工成本</span>
+                                                </label>
+                                            </div>
+                                            <div class="span1">
+												<div class="bui-select textR"><span id="sTp205">-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bui-list">
+                                        <div class="bui-btn bui-box clearactive" href="pages/pProject/TravelBudget.html">
+                                            <div class="bui-label">
+                                                <label for="item21">
+                                                    <i class="icon_plan"></i>
+                                                    <span>差旅费预算</span>
+                                                </label>
+                                            </div>
+                                            <div class="span1">
+                                                <div class="bui-select textR"><span id="sTp206">-</span></div>
+                                            </div>
+                                            <i class="icon-listright"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bui-scroll-foot"></div>
+                        </div>
+                    </li>
+                    <!-- 项目利润模块 -->
+                    <li>
+						<div class="profit-page2">
+
+							<div class="nav-list">
+
+								<div class="profit-page-title">
+									<div class="bui-box chart-box">
+										<div class="span1">
+											<span class="mark-title">利润(元)</span>
+											<h5 class="number-total"><span id="sT0">-</span></h5>
+										</div>
+										<div class="wrap-chart">
+											<div id="pieChart" class="chart"></div>
+										</div>
+									</div>
+
+								</div>
+								<div class="nav-list">
+									<div class="nav-item">
+										<div class="bui-box nav-title">
+											<div class="span1 nav-mark">
+												<i class="nav-icon icon-income"></i>
+												项目收入
+											</div>
+											<span class="item-number"><span id="sT1">-</span></span>
+										</div>
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT11">-</span></div>
+												<span class="mark">技术服务收入</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT12">-</span></div>
+												<span class="mark">软件收入</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT13">-</span></div>
+												<span class="mark">硬件收入</span>
+											</li>
+										</ul>
+										<ul class="bui-nav common-nav">
+											<li class="bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT14">-</span></div>
+												<span class="mark">云租凭收入</span>
+											</li>
+											<li class="bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT15">-</span></div>
+												<span class="mark">其他收入</span>
+											</li>
+											<li class="bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT16">-</span></div>
+												<span class="mark">自有产品</span>
+											</li>
+										</ul>
+									</div>
+									<div class="nav-item">
+										<div class="bui-box nav-title">
+											<div class="span1 nav-mark">
+												<i class="nav-icon icon-output"></i>
+												项目支出
+											</div>
+											<span class="item-number"><span id="sT2">-</span></span>
+										</div>
+										<div class="bui-box">
+											<div class="span1 nav-mark">　直接成本</div>
+											<span class="item-number"><span id="sT21">-</span></span>
+										</div>
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT211">-</span></div>
+												<span class="mark">劳务外包</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT212">-</span></div>
+												<span class="mark">软件采购</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT213">-</span></div>
+												<span class="mark">硬件采购</span>
+											</li>
+										</ul>
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT214">-</span></div>
+												<span class="mark">云租赁成本</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT215">-</span></div>
+												<span class="mark">其它成本</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT216">-</span></div>
+												<span class="mark">自有产品成本</span>
+											</li>
+										</ul>
+
+										<div class="bui-box">
+											<div class="span1 nav-mark">　间接成本</div>
+											<span class="item-number"><span id="sT22">-</span></span>
+										</div>
+
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT221">-</span></div>
+												<span class="mark">差旅费</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT222">-</span></div>
+												<span class="mark">项目经费</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT223">-</span></div>
+												<span class="mark">资金占用成本</span>
+											</li>
+										</ul>
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT224">-</span></div>
+												<span class="mark">事业部销售费用分摊</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT225">-</span></div>
+												<span class="mark">事业部费用公摊</span>
+											</li>
+											<li class="span4 bui-btn bui-box-vertical">
+												<div class="span1"><span id="sT226">-</span></div>
+												<span class="mark">二线费用分摊</span>
+											</li>
+										</ul>
+
+										<div class="bui-box">
+											<div class="span1 nav-mark">　其它成本</div>
+											<span class="item-number"><span id="sT23">-</span></span>
+										</div>
+										<ul class="bui-nav bui-fluid common-nav">
+											<li class=" span4 bui-btn bui-box-vertical">
+												<div class="span1 red-color"><span id="sT231">-</span></div>
+												<span class="mark">税金及附加</span>
+											</li>
+										</ul>
+									</div>
+
+
+
+								</div>
+
+
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>

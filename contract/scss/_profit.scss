@@ -1,0 +1,151 @@
+@charset "utf-8";
+/**利润页，下面几个页面有用到**/
+.profit-page{
+	&-title{
+		 .chart-box{
+		 	padding:.35rem;
+		 	color:#fff;
+		 	background-color:$mainColor;
+		 }
+		 .mark-title{
+		 	color:#fff;
+		 	opacity:.5;
+		 	font-size:$font18;
+		 }
+		 .number-total{
+		 	 margin-top:.2rem;
+       font-size:.5rem;
+		 }
+		 .wrap-chart{
+        
+		 }
+		 .chart{
+		 	  width:1.5rem;
+        height:1.5rem;
+
+		 }
+	}
+	.nav-list{
+		.bui-fluid{
+			padding-top:.1rem;
+		}
+		.nav-item{
+			padding:0 .2rem .1rem;
+			border-top:.2rem solid #f7f8f9;
+
+		}
+		.nav-title{
+			padding:.15rem 0;
+			font-size:$font24;
+			border-bottom:1px solid #eee;
+		}
+		.nav-mark{
+      color:$fontColor;
+		}
+		.item-number{
+			margin-right:.1rem;
+			color:$font666;
+		}
+		.nav-icon{
+			display:inline-block;
+			margin-right:.07rem;
+      width:.32rem;
+      height:.32rem;
+      vertical-align:-3px;
+      background-size: contain;
+		}
+		.icon1{
+			@include bgNo(list_icon11);
+			
+		}
+		.icon2{
+			@include bgNo(list_icon12);
+		}
+		.icon-listright{
+			margin-top:.05rem;
+		}
+		.red-color{
+			color:$redColor;
+		}
+	}
+	&-total{
+    .total-title{
+    	border:none;
+    	background-color:#f7f8f9;
+    	.total-mark{
+    	 	color:$fontColor;
+    	 }
+    	.total-price{
+    		margin-top:.1rem;
+    		margin-bottom:0;
+        color:$font999;
+        font-size:$font20;
+    	}
+    	.part-price{
+    		color:$fontColor;
+    	}
+    	.watch-type{
+    	  color:$mainColor;
+    	}
+    	.list-icon{
+    		margin-right:.08rem;
+    		vertical-align:-2px;
+    		@include backgroundIcon(list_icon13,.23rem,.23rem);
+    		background-size:contain;
+    	}
+    }
+	}
+	.bui-scroll-foot{
+		background-color:#fff;
+	}
+}
+/***项目列表**/
+.project-page{
+	.nav-list{
+		.nav-item{
+			&:first-child{
+				border-top:none;
+			}
+		}
+		.icon-project{
+			@include bgNo(list_icon28);
+		}
+	}
+}
+/***项目利润**/
+.projectProfit-page{
+  .nav-list{
+  	.icon-income{
+  		@include bgNo(list_icon24);
+  	}
+  	.icon-output{
+  		@include bgNo(list_icon25);
+  	}
+  }
+}
+/**订单收入***/
+.orderIncome-page{
+	&-title{
+		padding-top:.35rem;
+		height:1.8rem;
+		color:#fff;
+		background-color:$mainColor;
+		.mark-title{
+			color:#fff;
+			font-size:$font18;
+			opacity: .3;
+		}
+		.number-total{
+			margin-top:.2rem;
+			font-size:.5rem;
+		}
+	}
+	.edit-icon{
+		margin-top:.15rem;
+		@include backgroundIcon(nav_edt,.32rem,.32rem);
+		background-size:contain;
+	}
+	.icon-project{
+		@include bgNo(list_icon23);
+	}
+}

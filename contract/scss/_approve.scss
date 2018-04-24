@@ -1,0 +1,34 @@
+.approve-page{
+	.approve-title{
+		font-size:$font22;
+		color:$fontColor;
+		border-bottom:1px solid #eee;
+	}
+	.wrap-textarea{
+		padding-bottom:.4rem;
+		background-color:#fff;
+	}
+	.input-content{
+		padding:0;
+		width:100%;
+		height:3rem;
+		border:none;
+		outline: none;
+		color:#666;
+		overflow:hidden;
+	}
+	.approve-btn{
+		.bui-btn{
+			font-size:$font20;
+			@include borderRadius(.08rem);
+		}
+		.disagree{
+			color:$fontColor;
+			border:1px solid #eee;
+		}
+    .agree{
+    	color:#fff;
+    	background-color:$mainColor;
+    }
+	}
+}
