@@ -1,0 +1,39 @@
+.approveRecord-stepbar{
+
+	.bui-stepbar-cell{
+		padding-left:.25rem;
+		padding-right:.1rem;
+		border-left:3px solid $greenColor;
+		.bui-stepbar-dot{
+			width:.2rem;
+			height:.2rem;
+			background-color:$greenColor;
+		}
+		.bui-stepbar-text{
+			color:#999;
+			font-size:$font20;
+			h3{
+        margin-bottom:.1rem;
+			}
+			.bui-stepbar-time{
+				margin-bottom:.1rem;
+	      font-size:$font18;
+			}
+			.bui-stepbar-desc{
+	    	margin-bottom:.3rem;
+	    }
+		}
+
+	}
+	.active{
+		.bui-stepbar-dot{
+			top:-.05rem;
+			left:-.2rem;
+			width:.35rem;
+			height:.35rem;
+			line-height: .35rem;
+			
+			text-align: center;
+		}
+	}
+}

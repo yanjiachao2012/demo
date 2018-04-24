@@ -1,0 +1,102 @@
+.payTotal-page{
+	.payTotal-part{
+    
+		border-bottom:.2rem solid #f7f8f9;
+		.part-title{
+			font-size:$font22;
+			color:$fontColor;
+			border-bottom:1px solid #eee;
+		}
+		.wrap-chart{
+			margin-right:.25rem;
+			height:1.8rem;
+			width:1.8rem;
+		}
+	}
+	.wrap-chart-text{
+		margin-top:.2rem;
+	}
+	.chart-text-item{
+		margin-bottom:.1rem;
+		font-size:$font20;
+		.dot{
+			display:inline-block;
+			margin-right:.15rem;
+			width:.2rem;
+			height:.2rem;
+			vertical-align:-2px;
+		}
+		.name{
+			color:$font666;
+		}
+	}
+	.chart-text-item1{
+		.dot{
+			background-color:#3DB4FF;
+		}
+		.text-number{
+			color:#3DB4FF,
+		}
+	}
+	.chart-text-item2{
+		.dot{
+			background-color:#98D927;
+		}
+		.text-number{
+			color:#98D927,
+		}
+	}
+	.chart-text-item3{
+		.dot{
+			background-color:#FF943B;
+		}
+		.text-number{
+			color:#FF943B,
+		}
+	}
+	.chart-text-item4{
+		.dot{
+			background-color:#35C486;
+		}
+		.text-number{
+			color:#35C486,
+		}
+	}
+  .total-title{
+  	border-bottom:1px solid #eee;
+  }
+  .project-item{
+  	.common-nav{
+  		.bui-btn{
+  			padding:.15rem 0;
+  			border-bottom:none;
+  		}
+  	}
+  	.mark-title{
+  		color:$fontColor;
+  		font-size:$font22;
+  	}
+  	.wrap-title{
+  		padding-top:.18rem;
+  		padding-bottom:.18rem;
+  		border-bottom:1px solid #eee;
+  	}
+  	.icon-listdown{
+	  	-webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
+	    transition: -webkit-transform 0.3s ease-in-out 0s;
+	    transition: transform 0.3s ease-in-out 0s;
+	    transition: transform 0.3s ease-in-out 0s;
+	  }
+	  .active{
+	  	.icon-listdown{
+	  		-webkit-transform: rotate(-180deg);
+	      -ms-transform: rotate(-180deg);
+	      transform: rotate(-180deg);
+	  	}
+	  }
+  }
+  
+  .project-content{
+  	border-bottom:2px solid #eee;
+  }
+}

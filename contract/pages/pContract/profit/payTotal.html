@@ -1,0 +1,320 @@
+
+<div class="bui-page payTotal-page white-page">
+    <header class="common-header">
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <span class="bui-btn btn-back"> <i class="icon-back"></i>
+                </span>
+            </div>
+            <div class="bui-bar-main">支出汇总</div>
+            <div class="bui-bar-right"></div>
+        </div>
+    </header>
+    <main>
+		
+							<div class="payTotal-part container-x">
+								<h2 class="container-y part-title">费用统计</h2>
+								<div class="bui-box container-xy">
+									<div class="wrap-chart" id="payTotalPie"></div>
+									<div class="span1">
+										<dl class="wrap-chart-text">
+											<dd class="chart-text-item chart-text-item1">
+												<i class="dot"></i>
+												<span class="name">客户订单支出</span>
+												<span class="bui-right text-number"><span id="sT01">-</span></span>
+											</dd>
+											<dd class="chart-text-item chart-text-item2">
+												<i class="dot"></i>
+												<span class="name">项目订单支出</span>
+												<span class="bui-right text-number"><span id="sT02">-</span></span>
+											</dd>
+											<dd class="chart-text-item chart-text-item4">
+												<i class="dot"></i>
+												<span class="name">项目支出</span>
+												<span class="bui-right text-number"><span id="sT03">-</span></span>
+											</dd>
+											<dd class="chart-text-item chart-text-item3">
+												<i class="dot"></i>
+												<span class="name">项目销售成本</span>
+												<span class="bui-right text-number"><span id="sT04">-</span></span>
+											</dd>
+										</dl>
+									</div>
+								</div>
+
+							</div>
+							<div class="payTotal-part container-x">
+								<h2 class="container-y part-title">项目销售成本</h2>
+								<ul class="bui-nav common-nav">
+									<li class="bui-btn bui-box-vertical">
+										<div class="span1"><span id="sT11">-</span></div>
+										<span class="mark">杂项成本</span>
+									</li>
+									<li class="bui-btn bui-box-vertical">
+										<div class="span1"><span id="sT12">-</span></div>
+										<span class="mark">中标服务费</span>
+									</li>
+									<li class="bui-btn bui-box-vertical">
+										<div class="span1"><span id="sT13">-</span></div>
+										<span class="mark">商务合作费</span>
+									</li>
+									<li class="bui-btn bui-box-vertical">
+										<div class="span1"><span id="sT14">-</span></div>
+										<span class="mark">其他费用</span>
+									</li>
+								</ul>
+							</div>
+
+
+
+
+
+
+
+
+
+
+        <div class="profit-page-total">
+            <div class="bui-tab" id="uiPayTotalTab">
+                <div class="bui-tab-head common-tab">
+					<ul class="bui-nav">
+						<!--<li class="bui-btn active">
+							<span class="tab-name">费用统计</span>
+						</li>-->
+						<li class="bui-btn">
+							<span class="tab-name">客户订单</span>
+						</li>
+						<li class="bui-btn">
+							<span class="tab-name">项目订单</span>
+						</li>
+						<li class="bui-btn">
+							<span class="tab-name">项目支出</span>
+						</li>
+					</ul>
+                </div>
+                <div class="bui-tab-main">
+                    <ul>
+						<!--<li></li>-->
+                        <li>
+                            <div class="bui-box bui-btn total-title">
+                                <div class="span1">
+                                    <h3 class="total-mark">客户订单合计支出</h3>
+                                </div>
+								<span class="part-price">税后 <span id="sT2all">-</span></span>
+                            </div>
+							<div class="bui-list common-profit-list">
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											劳务外包
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT211">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT212">-</span></span>
+											<span class="bui-right">税前 <span id="sT213">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											软件采购
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT221">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT222">-</span></span>
+											<span class="bui-right">税前 <span id="sT223">-</span></span>
+										</div>
+									</div>
+									</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											硬件采购
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT231">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT232">-</span></span>
+											<span class="bui-right">税前 <span id="sT233">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											自有产品成本
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT241">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT242">-</span></span>
+											<span class="bui-right">税前 <span id="sT243">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											云租赁成本
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT251">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT252">-</span></span>
+											<span class="bui-right">税前 <span id="sT253">-</span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </li>
+						<li>
+							<div class="bui-box bui-btn total-title">
+								<div class="span1">
+									<h3 class="total-mark">项目订单合计支出</h3>
+								</div>
+								<span class="part-price">税后 <span id="sT3all">-</span></span>
+							</div>
+							<div class="bui-list common-profit-list">
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											人工外包
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT311">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT312">-</span></span>
+											<span class="bui-right">税前 <span id="sT313">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											软件采购
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT321">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT322">-</span></span>
+											<span class="bui-right">税前 <span id="sT323">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											硬件采购
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT331">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT332">-</span></span>
+											<span class="bui-right">税前 <span id="sT333">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											自有产品成本
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT341">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT342">-</span></span>
+											<span class="bui-right">税前 <span id="sT343">-</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="bui-box bui-btn">
+									<div class="span1">
+										<h6 class="item-name">
+											云租赁成本
+											<span class="bui-right"><span class="item-number blackColor"><span id="sT351">-</span></span></span>
+										</h6>
+										<div class="item-detail">
+											<span>税金 <span id="sT352">-</span></span>
+											<span class="bui-right">税前 <span id="sT353">-</span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="bui-box bui-btn total-title">
+								<div class="span1">
+									<h3 class="total-mark">项目支出汇总</h3>
+								</div>
+								<span class="part-price">税后 <span id="sT4all">-</span></span>
+							</div>
+							<dl id="accordionPay" class="project-item">
+								<dt class="bui-box wrap-title container-x">
+									<div class="span1 mark-title">直接成本</div>
+									<i class="icon-listdown"></i>
+								</dt>
+								<dd class="project-content">
+									<ul class="bui-nav bui-fluid common-nav">
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT411">-</span></div>
+											<span class="mark">人工外包</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT412">-</span></div>
+											<span class="mark">人工成本(内部)</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT413">-</span></div>
+											<span class="mark">人工成本(外包)</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT414">-</span></div>
+											<span class="mark">差旅费</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT415">-</span></div>
+											<span class="mark">项目经费</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT416">-</span></div>
+											<span class="mark">资金占用成本</span>
+										</li>
+									</ul>
+								</dd>
+
+								<dt class="bui-box wrap-title container-x">
+									<div class="span1 mark-title">分摊成本</div>
+									<i class="icon-listdown"></i>
+								</dt>
+								<dd class="project-content">
+									<ul class="bui-nav bui-fluid common-nav">
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT421">-</span></div>
+											<span class="mark">事业部销售费用分摊</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT422">-</span></div>
+											<span class="mark">事业部费用公摊</span>
+										</li>
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT423">-</span></div>
+											<span class="mark">二线费用公摊</span>
+										</li>
+									</ul>
+								</dd>
+								<dt class="bui-box wrap-title container-x">
+									<div class="span1 mark-title">其他成本</div>
+									<i class="icon-listdown"></i>
+								</dt>
+								<dd class="project-content">
+									<ul class="bui-nav bui-fluid common-nav">
+										<li class="span4 bui-btn bui-box-vertical">
+											<div class="span1"><span id="sT431">-</span></div>
+											<span class="mark">税金及附加</span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+
+						</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>

@@ -1,0 +1,63 @@
+.contractLaunch-page{
+	.short-title-list{
+		padding-left:.2rem;
+		padding-right:.2rem;
+		background-color:#fff;
+		.bui-btn{
+       padding:.15rem 0;
+		}
+		.span1{
+			color:#333;
+			font-size:$font24;
+		}
+	}
+	.contract-list{
+		padding:0 .2rem;
+		border-top:none;
+		background-color:#fff;
+	}
+	.contract-item{
+        padding:.2rem 0 .1rem;
+        border-bottom:1px solid #eee;
+    .item-title{
+    	font-size:$font24;
+    	color:$fontColor;
+    }
+    .mark{
+    	color:$font999;
+    	font-size:$font18;
+    }
+    .item-up{
+    	padding-bottom:.1rem;
+       border-bottom:1px solid #eee;
+    }
+    .item-down{
+    	padding-top:.15rem;
+    }
+    .detail{
+    	font-size:$font18;
+    }
+    .type{
+    	margin-right:.2rem;
+    	color:$font666;
+    }
+    .name{
+    	margin-right:.2rem;
+    	color:$fontColor;
+    }
+    .time{
+    	font-size:$font18;
+    	color:$font999;
+    }
+    .price{
+    	color:$font666;
+    }
+    .btn{
+    	padding:.05rem .1rem;
+    	margin-left:.15rem;
+    	border-width:1px;
+    	border-style:solid;
+      @include borderRadius(.2rem);
+    }
+	}
+}

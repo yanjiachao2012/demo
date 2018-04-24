@@ -1,0 +1,127 @@
+loader.define(function(require, exports, module) {
+
+	var pageview = {};
+	var payTab, uiAccordion;
+	// 模块初始化定义
+	pageview.init = function() {
+		navTab();
+		accordion();
+	}
+
+	function navTab() {
+		payTab = bui.slide({
+			id: "#uiPayTotalTab",
+			menu: ".bui-nav",
+			children: ".bui-tab-main ul",
+			scroll: true
+		})
+	};
+
+	function accordion() {
+		uiAccordion = bui.accordion({
+			id: "#accordionPay"
+		});
+		uiAccordion.showFirst();
+	}
+
+	pageview.initPie = function() {
+
+		// 指定图表的配置项和数据
+		var optionPieChart = {
+			title: {
+				show: true,
+				text: '38%',
+				subtext: '总成本',
+				x: 'center',
+				y: '25%',
+				textStyle: {
+					color: '#FFA027',
+					lineHeight: 1,
+					fontWeight: 'normal',
+					fontSize: 24,
+				},
+				subtextStyle: {
+					color: '#999',
+					fontWeight: 'normal',
+					fontSize: 14
+				}
+			},
+			//配置色块颜色
+			color: ['#3DB4FF', '#98D927', '#FF943B', '#35C486'],
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b}: {c} ({d}%)"
+			},
+			legend: {
+				show: false,
+				textStyle: {
+					color: '#333'
+				},
+				orient: 'vertical',
+				left: 0,
+				top: 20,
+				formatter: function(name) {
+					return echarts.format.truncateText(name, 90, '14px Microsoft Yahei', '…');
+				},
+				tooltip: {
+					show: true
+				},
+				data: ['客户订单', '项目订单', '项目支出', '项目销售成本']
+			},
+			series: [{
+				name: '数据来源',
+				type: 'pie',
+				radius: ['75%', '100%'],
+				avoidLabelOverlap: false,
+				label: {
+					normal: {
+						show: false,
+						position: 'center'
+					},
+					emphasis: {
+						show: false,
+						textStyle: {
+							fontSize: '30',
+							fontWeight: 'normal',
+							color: '#fff'
+						}
+					}
+				},
+				labelLine: {
+					normal: {
+						show: false
+					}
+				},
+				itemStyle: {
+
+				},
+				center: ['50%', '50%'],
+				data: [{
+					value: 38,
+					name: '客户订单'
+				}, {
+					value: 62,
+					name: '项目订单'
+				}, {
+					value: 62,
+					name: '项目支出'
+				}, {
+					value: 62,
+					name: '项目销售成本'
+				}]
+			}]
+		};
+		return optionPieChart;
+	}
+	// 初始化
+
+
+	loader.import("js/plugins/echarts.min.js", function() {
+		var pieChart = echarts.init(document.getElementById("payTotalPie"));
+		pieChart.setOption(pageview.initPie());
+
+	});
+	pageview.init();
+	// 输出模块
+	module.exports = pageview;
+})

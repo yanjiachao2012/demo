@@ -1,0 +1,21 @@
+.common-nav{
+	.bui-btn{
+		padding:.15rem 0;
+		border:none;
+	}
+	.span1{
+		margin-bottom:.15rem;
+		color:$fontColor;
+		font-size:$font24;
+	}
+	.mark{
+		font-size:$font18;
+		color:$font999;
+	}
+}
+.common-nav.bui-fluid{
+	border-top:none;
+	&>[class*=bui-btn].bui-box-vertical{
+		padding:.15rem 0;
+	}
+}

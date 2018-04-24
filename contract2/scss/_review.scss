@@ -1,0 +1,64 @@
+.contractReview-page{
+	.review-title{
+		padding:0 .2rem;
+		border-bottom:.2rem solid #f7f8f9;
+	}
+	.review-item{
+		padding-top:.2rem;
+		padding-bottom:.2rem;
+		font-size:$font22;
+		border-bottom:1px solid #eee;
+    .bui-label{
+    	width:1.3rem;
+    	color:$font999;
+    }
+    .span1{
+    	color:$fontColor;
+    }
+	}
+	
+	.review-list{
+		padding:0 .2rem;
+		border-top:none;
+		border-bottom:.2rem solid #f7f8f9;
+	}
+	.review-down{
+		padding:0 .2rem;
+	}
+	.number-nav{
+		padding:.12rem 0;
+		border-bottom:1px solid #eee;
+		.bui-btn{
+			padding:.08rem 0;
+			&:first-child{
+				border-right:1px solid #eee;
+			}
+		}
+		.profit{
+			color:$redColor;
+		}
+	}
+	.link-list{
+		border-top:none;
+		font-size:$font24;
+		.bui-btn{
+			padding-left:0;
+			padding-right:0;
+		}
+		.span1{
+			color:$fontColor;
+		}
+		.number{
+			margin-right:.1rem;
+			color:$font999;
+		}
+		.icon-listright{
+		margin-top:.02rem;
+		}
+	}
+	.approve-tip{
+		font-size:$font18;
+		color:$redColor;
+		background-color: #f7f8f9;
+	}
+}

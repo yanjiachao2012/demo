@@ -1,0 +1,10 @@
+.workLoad-page{
+	.workLoad-list{
+		.bui-nav{
+			padding:.1rem 0;
+			&:first-child{
+				border-bottom:1px solid #eee;
+			}
+		}
+	}
+}

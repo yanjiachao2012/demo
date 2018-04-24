@@ -1,0 +1,264 @@
+﻿<div class="bui-page InvoiceAdd-page">
+	<header class="common-header">
+		<div class="bui-bar">
+			<div class="bui-bar-left">
+				<span class="bui-btn btn-back"> <i class="icon-back"></i>
+				</span>
+			</div>
+			<div class="bui-bar-main">申请开发票</div>
+			<div class="bui-bar-right">
+				<!--<span class="bui-btn">完成</span>
+			-->
+		</div>
+	</div>
+</header>
+<main>
+	<div class="mainL">
+		<div class="bui-list">
+			<div class="bui-btn bui-box clearactive">
+				<div class="bui-label"> <strong class="label-name">合同编号</strong>
+				</div>
+				<div class="span4">
+					<div class="bui-select">
+						<span>-</span>
+					</div>
+				</div>
+			</div>
+			<div class="bui-btn bui-box clearactive">
+				<div class="bui-label"> <strong class="label-name">合同名称</strong>
+				</div>
+				<div class="span4">
+					<div class="bui-select">
+						<span>-</span>
+					</div>
+				</div>
+			</div>
+			<div class="bui-btn bui-box clearactive">
+				<div class="bui-label">
+					<strong class="label-name">发票类型</strong>
+				</div>
+				<div class="span1 bui-fluid">
+					<div class="bui-check span4">
+						<input name="CK1" id="CK11" type="radio">
+						<label class="label" for="CK11">专票</label>
+					</div>
+					<div class="bui-check span4">
+						<input name="CK1" id="CK12" type="radio">
+						<label class="label" for="CK12">普票</label>
+					</div>
+				</div>
+			</div>
+			<div class="bui-btn bui-box clearactive" href="pages/pClient/ClientSelect.html">
+
+				<div class="bui-label">
+					<strong class="label-name">客户名称</strong>
+				</div>
+				<div class="span1">
+					<div class="bui-select">
+						<span>请选择</span>
+					</div>
+				</div> <i class="icon-listright"></i>
+			</div>
+			<div class="bui-btn bui-box clearactive">
+				<div class="bui-label">
+					<strong class="label-name">开票阶段</strong>
+				</div>
+				<div class="span1 bui-fluid">
+					<span class="bui-check span4">
+						<input id="CK21" type="checkbox">
+						<label class="label" for="CK21">首付款</label>
+					</span>
+					<span class="bui-check span4">
+						<input id="CK22" type="checkbox">
+						<label class="label" for="CK22">初验款</label>
+					</span>
+					<span class="bui-check span4">
+						<input id="CK23" type="checkbox">
+						<label class="label" for="CK23">终验款</label>
+					</span>
+				</div>
+			</div>
+
+			<div class="container-y">
+				<h4 class="item-title">阶段开票金额:</h4>
+				<div class="List-shoukuanjieduang">
+					<div class="bui-box clearactive">
+						<div class="bui-label">
+							<label for="item22">
+								<span>首付款</span>
+							</label>
+							<div class="FontsSet02">
+								<span>最大 5000</span>
+							</div>
+						</div>
+						<div class="span1">
+							<input id="item22" type="text" class="bui-input FontsSet03 colorB" placeholder="请输入" />
+						</div>
+					</div>
+					<div class="bui-box clearactive ">
+						<div class="bui-label">
+							<label for="item22">
+								<span>初验款</span>
+							</label>
+							<div class="FontsSet02">
+								<span>最大 5000</span>
+							</div>
+						</div>
+						<div class="span1">
+							<input id="item22" type="text" class="bui-input FontsSet03 colorB" placeholder="请输入" />
+						</div>
+					</div>
+					<div class="bui-box clearactive">
+						<div class="bui-label">
+							<label for="item22">
+								<span>开票金额合计</span>
+							</label>
+						</div>
+						<div class="span1">
+							<div class="textR">
+								<span>999,888</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bui-list">
+			<div class="bui-btn bui-box">
+				<div class="bui-label">
+					<label for="item21">
+						<i class="icon_pre"></i>
+						<span>客户订单结算</span>
+					</label>
+				</div>
+				<div class="span1">
+					<div class="bui-select textR colorB">
+						<span>合计：</span>
+						<span>10000</span>
+					</div>
+				</div>
+				<!--<i class="icon_add"></i>
+			-->
+		</div>
+
+		<div>
+			<div class="List-kedan-fenpei">
+
+				<div class="FontsSet01">MSTC-GZ01-17-322-C01-轨道交通事业部建设管理部客单</div>
+
+				<div class="bui-box">
+					<div class="bui-label FontsSet02">
+						<span class="spT01">BSPRJ2017857</span>
+					</div>
+					<div class="span1 FontsSet03">
+						<div class="textR">
+							<span>最大</span>
+							<span>40,000.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="bui-box">
+					<div class="bui-label">
+						<label for="item23">
+							<span>分配金额</span>
+						</label>
+					</div>
+					<div class="span1 FontsSet04">
+						<input id="item23" type="text" class="bui-input textR colorB" placeholder="请输入金额"></div>
+				</div>
+			</div>
+
+			<div class="List-kedan-fenpei">
+
+				<div class="FontsSet01">MSTC-GZ01-17-322-C02-政企事业部技术管理部客单</div>
+
+				<div class="bui-box">
+					<div class="bui-label FontsSet02">
+						<span class="spT01">BSPRJ2017858</span>
+					</div>
+					<div class="span1 FontsSet03">
+						<div class="textR">
+							<span>最大</span>
+							<span>8,000.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="bui-box">
+					<div class="bui-label">
+						<label for="item23">
+							<span>分配金额</span>
+						</label>
+					</div>
+					<div class="span1 FontsSet04">
+						<input id="item23" type="text" class="bui-input textR colorB" placeholder="请输入金额"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bui-btn bui-box">
+			<div class="bui-label">
+				<label for="item21">
+					<i class="icon_pre"></i>
+					<span>其它费用结算</span>
+				</label>
+			</div>
+			<div class="span1">
+				<div class="bui-select textR colorB">
+					<span>合计：</span>
+					<span>10000</span>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="List-kedan-fenpei">
+				<div class="bui-box clearactive">
+					<div class="bui-label span1">
+						<label for="item22">
+							<span>其它费用结算</span>
+						</label>
+						<div class="FontsSet02">
+							<span>最大 1000</span>
+						</div>
+					</div>
+					<div class="span1 FontsSet04">
+						<input id="item22" type="text" class="bui-input textR colorB" placeholder="请输入金额"></div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="bui-list">
+		<div class="bui-btn bui-box clearactive">
+			<div class="bui-label">
+				<label for="item22">
+					<span>发票说明</span>
+				</label>
+			</div>
+			<div class="span4">
+				<input id="item22" type="text" class="bui-input colorB" placeholder="请输入"></div>
+		</div>
+		<div class="bui-btn bui-box clearactive">
+			<div class="bui-label">
+				<label for="item22">
+					<span>备注</span>
+				</label>
+			</div>
+			<div class="span4">
+				<input id="item22" type="text" class="bui-input colorB" placeholder="请输入"></div>
+		</div>
+
+	</div>
+</div>
+</main>
+	<footer>
+		<div class="container-xy">
+			<button class="bui-btn submit-btn">提交申请</button>
+		</div>
+	</footer>
+</div>

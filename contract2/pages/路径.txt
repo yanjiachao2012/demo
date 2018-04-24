@@ -1,0 +1,38 @@
+首页 main
+合同系统 contractSystem
+发起会审 contractLaunch
+合同会审 review
+合同会审利润 reviewProfit
+
+
+项目立项 projectPreview
+
+合同会审-利润-收入汇总 reviewProfit1
+
+合同会审-利润-收入汇总-客单查看 reviewProfit2
+
+合同会审-利润-支出汇总-payTotal
+
+工作量 wordLoad    6.7
+
+收款计划 contractInfo   7
+
+
+
+审批已经提交 approve   8
+
+项目列表 projectList   13.1
+
+项目利润 projectProfit    13.2
+
+附件 fileList   14
+
+ 
+
+项单首页 contractIndex 10.0
+
+项目订单收入 orderIncome 10.1
+
+项目订单收款 contractInfo 10.2
+
+审批记录 approveRecord  9
